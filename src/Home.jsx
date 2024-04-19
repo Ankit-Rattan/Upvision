@@ -6,15 +6,21 @@ import Footer from './components/Footer'
 import Team from './components/Team'
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import Hero from './src/Hero'
+import EventPage from './src/EventPage'
+import GalleryPage from './src/GalleryPage'
 
 
 // import TeamCard from './components/GS'
 
 function App() {
-  
+
   return (
     <>
-      <Team/>
+      <Hero />
+      <EventPage />
+      <GalleryPage />
+      <Team />
     </>
   )
 }
