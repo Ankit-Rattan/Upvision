@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black; 
+    color: white; 
+}
+
+.gallery-page {
+    padding: 20px;
+}
+
+.gallery-page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cccccc; 
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-thumbnail {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.thumbnail-title {
+    text-align: center;
+    margin-top: 5px;
+    color: #cccccc; 
+}
+
+.gallery-thumbnail:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Neon blue glow */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.larger-view {
+    background-color: #333333;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 800px;
+    width: 90%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+.larger-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.larger-title, .larger-description {
+    margin-top: 10px;
+    color: #cccccc; 
+}
+
+.gallery-thumbnail:not(:hover) {
+    filter: blur(2px);
+}

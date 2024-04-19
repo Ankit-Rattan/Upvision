@@ -1,18 +1,43 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import "./App.css";
-import Home from "./Pages/Home.jsx";
+
+import React, { useEffect, useState } from 'react';
+import reactLogo from './assets/react.svg';
+import './App.css';
+import Footer from './components/Footer';
+import Team from './components/Team';
+import Home from './Home';
+import AllTeam from './components/AllTeam';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Loader from './components/Loader'
 
 function App() {
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+    },5000);
+  }, []);
+
   return (
-    <div className="App">
-      <Router basename="/">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          {/* <Route path="/" element={<Home />} /> */}
-        </Routes>
-      </Router>
-    </div>
+    <>
+      {loading ? 
+        <Loader />
+       : 
+        <div>
+          <BrowserRouter> 
+            <div>
+              <Routes>
+                <Route path='/' element={<Home />} />
+                <Route path='/allteam' element={<AllTeam />} />
+              </Routes>
+              <Footer />
+            </div>
+          </BrowserRouter>
+        </div>
+      }
+    </>
+>>>>>>> eddd3888af0e7c6c805135d18438f087f4084ee2
   );
 }
 
