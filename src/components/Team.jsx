@@ -8,11 +8,10 @@ import Navbar from "./Navbar.jsx";
 const Team = () => {
   return (
     <>
-      <div className="bg-zinc-800 pb-5">
-        <Navbar />
-        <div>
+      <div className="bg-zinc-800 pb-5  p-[5rem] max-w-[100%] ">
+        <div className="" >
           <p className="text-slate-200 typing">Our Team</p>
-          <div className="ourTeam">
+          <div className="team">
             <div className="">
               <div className="">
                 <div className="flex justify-between flex-wrap">
