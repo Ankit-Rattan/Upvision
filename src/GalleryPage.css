@@ -1,0 +1,62 @@
+.gallery-page {
+    padding: 20px;
+    background-color: black;
+}
+
+.gallery-page-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cccccc; 
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-thumbnail {
+    position: relative;
+    width: 150px;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.thumbnail-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.thumbnail-title {
+    text-align: center;
+    margin-top: 5px;
+    color: #cccccc; 
+}
+
+.gallery-thumbnail:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7); /* Neon blue glow */
+}
+
+.view-all-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #00b3ff;
+    border-radius: 5px;
+    background-color: black;
+    color: #00b3ff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.view-all-button:hover {
+    background-color: #00b3ff;
+    color: black;
+    box-shadow: 0 5px 15px rgba(0, 123, 255, 0.5);
+}
