@@ -55,14 +55,14 @@
 
 //   return (
 //     <section className="hero">
-//       <video autoplay muted loop id="background-video">
+//       {/* <video autoplay muted loop id="background-video"> */}
 
-//       <source src={bgvid} type="video/mp4"/>
-// {/* 
-//       <h1 className={isTyping ? "second-title" : "title"}>
+//       {/* <source src={bgvid} type="video/mp4"/> */}
+
+//       <h1 className= {isTyping ? "second-title" : "title"}>
 //         <span className="upvision-text">UpVision:</span> {currentTitle}
-//       </h1> */}
-//       </video>
+//       </h1>
+//       {/* </video> */}
 //     </section>
 //   );
 // }
@@ -73,13 +73,20 @@
 
 import React from 'react';
 import vid from '../images/herovid.mp4';
+import '../Styles/HeroText.css';
 
-const Loader = () => {
+const Hero = () => {
   return (
-    <div>
+    <>
+      {/* <div>
       <video id='background-video' src={vid} autoPlay loop muted className='w-full h-[100vh] object-cover' />
-    </div>
+    </div> */}
+        <div class="title">
+          <h1 className='text-[3rem] font-extrabold text-left'>Empower your tech journey with us,<br/> where innovation meets community</h1>
+        </div>
+
+    </>
   );
 };
 
-export default Loader;
+export default Hero;
