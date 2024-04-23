@@ -4,15 +4,16 @@ import DGS from "./DGS";
 import GS from "../images/GS.jpg";
 import "../Styles/Footer.css";
 import Navbar from "./Navbar.jsx";
-// import drone from "../images/Drone.mp4";
 
 const Team = () => {
   return (
-    <div id="team">
-      <div className="bg-black pb-10 ">
-        <div className="mx-20">
-          <p className="text-slate-200 typing mb-4">Our Team</p>
-          <div className="ourTeam">
+    <>
+      <div className="black pb-5  p-[5rem] max-w-[100%] ">
+        <div className="">
+          <p className=" team-title text-slate-200 text-center ">
+            <span>Our Team</span>
+          </p>
+          <div className="team">
             <div className="">
               <div className="">
                 <div className="flex justify-between flex-wrap">
@@ -47,7 +48,7 @@ const Team = () => {
               </div>
               <div className="flex justify-center m-3 mt-[3rem]">
                 <Link to="/allteam">
-                  <button className="shadow-sm  shadow-emerald-200 bg-[#16E6B4] hover:shadow-lg hover:shadow-emerald-400 duration-500 text-white font-semibold py-2 px-4 rounded">
+                  <button className="shadow-sm shadow-emerald-200 bg-[#16E6B4] hover:shadow-lg hover:shadow-emerald-400 duration-500 text-white font-semibold py-2 px-4 rounded">
                     Executives and Volunteers
                   </button>
                 </Link>
@@ -56,7 +57,7 @@ const Team = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

@@ -39,6 +39,17 @@
   margin: auto;
 
 }
+.typing2 {
+  width: 11ch;
+  animation: typing 1s steps(8), .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: auto;
+
+}
 
 @keyframes typing {
   from {
@@ -100,33 +111,3 @@
 .next {
   right: 0;
 }
-#team{
-  /* z-index: 1; */
-  background-color: transparent;
-}
-
-
-  /* .drone_div{
-    animation: pulse 3s infinite;
-
-  
-  }
-  .drone_div:hover{
-    
-      animation-play-state: paused;
-    
-  }
-
-  @keyframes pulse {
-    0% {
-      transform: scale(1);
-    }
-
-    50% {
-      transform: scale(1.1);
-    }
-
-    100% {
-      transform: scale(1);
-    }
-  } */

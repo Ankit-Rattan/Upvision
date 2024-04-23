@@ -197,6 +197,15 @@ const Footer = () => {
                 ></polygon>
               </svg>
             </div>
+            <p className="mt-3">
+              <a
+                href="mailto: techclub@nitdelhi.ac.in"
+                className="hover:text-emerald-300 font-thin"
+              >
+                {" "}
+                📧techclub@nitdelhi.ac.in
+              </a>
+            </p>
             <div></div>
           </div>
           <div>
