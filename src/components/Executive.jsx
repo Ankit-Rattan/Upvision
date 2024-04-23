@@ -4,6 +4,7 @@ import bhuvi from '../images/Bhuvi.jpg'
 import priya from '../images/Priya.jpg'
 import vedanshi from '../images/Vedanshi.png'
 import vanshika from '../images/Vanshika.png'
+import himanshu from '../images/himanshu.jpg'
 
 
 
@@ -14,7 +15,7 @@ const Executive = () => {
                 <div className='flex flex-wrap gap-1'>
 
                     <TeamCard name="Ankit Rattan" desig="Executive" img="https://media.licdn.com/dms/image/D4D03AQGs7d-pZ5Wfng/profile-displayphoto-shrink_400_400/0/1664718594334?e=1718841600&v=beta&t=VD7NNgGPYB2iL6FryHgNxeh5_b63hCF7lihtz-X6yQU" linkedin="https://www.linkedin.com/in/ankit-rattan-3a34b724a/" email="mailto:221230009@nitdelhi.ac.in" />
-                    <TeamCard name="Himanshu Gupta" desig="Executive" img="https://media.licdn.com/dms/image/D4D03AQFuHFwAMDkM6g/profile-displayphoto-shrink_400_400/0/1696793812005?e=1718841600&v=beta&t=RpRwPN3gAtdL6HNjbBDjSKAnZfHWB8zz90VtSqcsnnw" linkedin="https://www.linkedin.com/in/himanshu-gupta-15703a250/" email="mailto:221230027@nitdelhi.ac.in" />
+                    <TeamCard name="Himanshu Gupta" desig="Executive" img={himanshu}  linkedin="https://www.linkedin.com/in/himanshu-gupta-15703a250/" email="mailto:221230027@nitdelhi.ac.in" />
                     <TeamCard name="Arshpreet Kaur" desig="Executive" img="https://media.licdn.com/dms/image/D5635AQEkZbtSo7ASqA/profile-framedphoto-shrink_400_400/0/1711473585329?e=1713970800&v=beta&t=I885nI-BteDpn_swxap4ukOjxiJqj7x2cI_ZUUAeH1w" linkedin="https://www.linkedin.com/in/arshpreet-kaur-4b3a621b3/" email="mailto:221230012@nitdelhi.ac.in" />
                     <TeamCard name="Bhuvi Mangwani" desig="Executive" img={bhuvi} linkedin="https://www.linkedin.com/in/bhuvi-mangwani-59259724b/" email="mailto:221230017@nitdelhi.ac.in" />
                     <TeamCard name="Priya Pandey" desig="Executive" img={priya} linkedin="https://www.linkedin.com/in/priya-pandey-786b36259/" email="mailto:221230017@nitdelhi.ac.in" />

@@ -14,7 +14,7 @@ const AllTeam = () => {
   return (
     <>
       <Navbar/>
-      <div className='bg-zinc-800 pb-5  max-w-[100%]'>
+      <div className='bg-zinc-800 pb-5 p-[5rem]  max-w-[100%]'>
 
         <div >
           <p className="text-slate-200 typing">Our Team</p>
