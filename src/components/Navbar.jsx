@@ -31,7 +31,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <a href="#About" className="navbar-links">
+            <a href="#about" className="navbar-links">
               About Us
             </a>
           </li>
@@ -46,13 +46,13 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#Message" className="navbar-links">
-              Message
+            <a href="#alumni" className="navbar-links">
+              Alumni
             </a>
           </li>
           <li>
-            <a href="#contact" className="navbar-links">
-              Contact Us
+            <a href="#message" className="navbar-links">
+              Message
             </a>
           </li>
         </ul>

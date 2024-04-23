@@ -1,8 +1,6 @@
 
 body{
     background-color: black;
-    /* background-image: url(../images/bg1.png); */
-
 }
 
 
@@ -14,13 +12,13 @@ body{
     justify-content: center;
     align-items: center;
     gap: 24px;
-    box-shadow: inset 0 12px 100px black; 
-    background-color: #1b2430;
-    /* backdrop-filter: blur(10px); */
+    box-shadow: inset 0 60px 100px black; 
+    background-color: black;
 }
 /* Image */
 .ba-image-content {
-    width: 50%;
+    /* width: 50%; */
+    margin: 100px 100px;
     max-width: 100%;
     text-align: center;
 }
@@ -31,7 +29,7 @@ body{
 /* Text */
 .ba-text-content {
     width: 50%;
-    margin: auto 25px;
+    margin: auto 100px;
     /* box-shadow: 0 0 10px 10px #fff, 0 0 10px 10px #, 0 0 10px 10px #ff00d4; */
     border-radius: 5px;
     animation: bounce 4s linear infinite;
@@ -57,8 +55,7 @@ body{
 }
 .ba-description {
     margin: 32px 0;
-    color: white;
-    /* color: aliceblue; */
+    color: #b1aaaa;
     text-align: justify;
     font-family: 'Rubik', sans-serif;
     font-size: var(--font-size);
@@ -102,7 +99,7 @@ body{
     border: 1px solid transparent;
 }
 /* Responsive */
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 995px) {
     .ba-section {
         display: flex;
         flex-direction: column;
@@ -110,7 +107,7 @@ body{
     .ba-image-content {
         width: 100%;
         max-width: 100%;
-        /* margin: 0 0 32px 0; */
+        margin: 0 0 32px 0;
     }
     .ba-text-content {
         width: 100%;
@@ -119,6 +116,11 @@ body{
     .ba-image1 {
         width: 40%;
         height:40%;
+    }
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     .manoj-section{
         display: flex;
@@ -268,3 +270,11 @@ body{
     }
 
 }
+.Robot_gif{
+    position: relative;
+    /* height: 3rem; */
+    z-index: 1;
+    box-shadow: inset 1px 30px 0px black, inset 10px 60px 100px black;
+    background-color: #16E6B4;
+}
+

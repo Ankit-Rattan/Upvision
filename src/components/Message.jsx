@@ -5,9 +5,10 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import director from "../images/director-img.png";
 import coordinator from "../images/Manoj_Kumawat.jpg";
+import DSW from "../images/DSW.jpg";
 import "../Styles/Message.css";
 import { text } from "@fortawesome/fontawesome-svg-core";
-
+import myGif from "../images/Robot1.gif";
 function Message() {
   const navigate = useNavigate();
   const messageClick = () => {
@@ -15,7 +16,7 @@ function Message() {
   };
 
   return (
-    <div>
+    <div id="message">
       <div className="area">
         <ul className="circles">
           <li></li>
@@ -30,9 +31,21 @@ function Message() {
           <li></li>
         </ul>
         <div>
+          <div className="Robot_gif">
+            <img
+              src={myGif}
+              alt="my-gif"
+              className="robot_vid h-[100px] mx-[50%]"
+            />
+          </div>
           <div className="ba-section ">
             <div className="ba-image-content ">
-              <img src={director} alt="Director" className="ba-image1" />
+              <div className="image">
+                <img src={director} alt="Director" className="ba-image1" />
+                <h2 className="p-5">
+                  <strong>Prof.(Dr.) Ajay K. Sharma</strong>
+                </h2>
+              </div>
             </div>
             <div className="ba-text-content" id="director-msg">
               {/* <span>#NITDAlumni</span> */}
@@ -71,6 +84,56 @@ function Message() {
         </div>
       </div>
 
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div>
+          <div className="ba-section ">
+            <div className="ba-text-content" id="director-msg">
+              {/* <span>#NITDAlumni</span> */}
+              <h1 className="ba-title">
+                <span>Dean Student Welfare&apos;s Message</span>
+              </h1>
+              <p className="ba-description">
+                <br />
+                As the Dean of Student Welfare, I'm thrilled to witness the
+                boundless creativity and passion for technology within our
+                community. In this ever-evolving digital landscape, our tech
+                club serves as your playground for exploration, collaboration,
+                and growth. From coding marathons to futuristic workshops,
+                there's something here for every curious mind and inventive
+                spirit. But beyond the ones and zeros, our club is a vibrant
+                tapestry of personalities, united by a shared love for all
+                things tech. Together, we'll break barriers, forge friendships,
+                and pave the way for a brighter, more connected future.
+              </p>
+            </div>
+            <div className="ba-image-content ">
+              <div className="image">
+                <img
+                  src={DSW}
+                  alt="Director"
+                  className="ba-image1 h-[400px] w-[330px]"
+                />
+                <h2 className="p-5">
+                  <strong>Prof. (Dr.) Jyoteesh Malhotra</strong>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div>
         <div className="area">
           <ul className="circles">
@@ -86,27 +149,35 @@ function Message() {
             <li></li>
           </ul>
           <div className="ba-section manoj-section">
+            <div className="ba-image-content" id="manoj_msg">
+              <div className="image">
+                <img src={coordinator} alt="Director" className="ba-image1" />
+                <h2 className="p-5">
+                  <strong>Dr. Manoj Kumawat</strong>
+                </h2>
+              </div>
+            </div>
             <div className="ba-text-content" id="manoj_msg">
               {/* <span>#NITDAlumni</span> */}
               <h1 className="ba-title">
-                <span>Coordinator&apos;s Message</span>
+                <span>Faculty Coordinator&apos;s Message</span>
               </h1>
               <p className="ba-description">
                 <br />
                 It is my privilege to foster an environment where curiosity
-                thrives, knowledge is shared, and connections are made. We're
-                all about exploring cool tech stuff together. Whether you're a
-                pro or just starting out, there's something here for you. We've
-                got workshops, talks, and events that cover everything from
-                coding to gadgets. From hands-on workshops to engaging
-                discussions, we offer a diverse array of events tailored to suit
-                every interest and skill level. My goal is to ensure that every
-                member feels supported, valued, and inspired to explore the
-                endless possibilities that technology has to offer. Together,
-                let's harness the power of collaboration and innovation to push
-                the boundaries of what's possible and shape the future of
-                technology. I invite you to dive in, get involved, and embark on
-                this exciting journey with us.
+                thrives, knowledge is shared, and connections are made.
+                We&apos;re all about exploring cool tech stuff together. Whether
+                you&apos;re a pro or just starting out, there&apos;s something
+                here for you. We&apos;ve got workshops, talks, and events that
+                cover everything from coding to gadgets. From hands-on workshops
+                to engaging discussions, we offer a diverse array of events
+                tailored to suit every interest and skill level. My goal is to
+                ensure that every member feels supported, valued, and inspired
+                to explore the endless possibilities that technology has to
+                offer. Together, let&apos;s harness the power of collaboration
+                and innovation to push the boundaries of what&apos;s possible
+                and shape the future of technology. I invite you to dive in, get
+                involved, and embark on this exciting journey with us.
               </p>
 
               {/* <button
@@ -116,9 +187,6 @@ function Message() {
               >
               <FontAwesomeIcon /> Read More
             </button> */}
-            </div>
-            <div className="ba-image-content" id="manoj_msg">
-              <img src={coordinator} alt="Director" className="ba-image1" />
             </div>
           </div>
         </div>
