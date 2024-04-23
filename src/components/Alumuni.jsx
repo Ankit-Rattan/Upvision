@@ -12,6 +12,12 @@ const Alumuni = () => {
       <div className="bg-zinc-800 pb-5  px-[3rem] max-w-[100%] ">
           <p className="text-slate-200 text-center typing2 mb-3">Our Alumni</p>
         <div className="" >
+const Team = () => {
+  return (
+    <>
+      <div className="bg-zinc-800 pb-5  px-[3rem] max-w-[100%] ">
+        <div className="" >
+          <p className="text-slate-200 text-center typing2 mb-3">Our Alumuni</p>
           <div className="allteam">
             <div className="">
               <div className="">
@@ -31,16 +37,7 @@ const Alumuni = () => {
                       desig="General Secretary (2021-2022)"
                       img="https://media.licdn.com/dms/image/D4D03AQFM5Hf0qzvOMw/profile-displayphoto-shrink_400_400/0/1694754193166?e=1719446400&v=beta&t=kLVZmuIisoArINBdPdgmA5EUpMwl0rkKIHAbIY3A1Q4"
                       linkedin="https://www.linkedin.com/in/rahulsinha19/"
-                      email="https://www.linkedin.com/in/rahulsinha19/"
-                    />
-                  </div>
-                  <div>
-                    <DGS
-                      name="Aditya Sharma"
-                      desig="General Secretary (2020-2021)"
-                      img="https://media.licdn.com/dms/image/D4D03AQErmwCsCtX7Sw/profile-displayphoto-shrink_400_400/0/1695185770687?e=1719446400&v=beta&t=8WgKpN9xjikqjFLgDcC6xxapYemJUBEtDXjez9Ullio"
-                      linkedin="https://www.linkedin.com/in/aditya-sharma-6b18ba158/"
-                      email="mailto:rituparn678@gmail.com#"
+                      email="mailto:#"
                     />
                   </div>
 
@@ -86,4 +83,8 @@ const Alumuni = () => {
   );
 };
 
+<<<<<<< HEAD
 export default Alumuni  ;
+=======
+export default Team;
+>>>>>>> 5e952d39a66e42841b4eb1cdb42c8c5766b26b3c
