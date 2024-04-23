@@ -94,7 +94,6 @@ const Alumni = () => {
                         />
                       </div>
                     </div>
- 
                   </div>
                 </div>
               </div>
