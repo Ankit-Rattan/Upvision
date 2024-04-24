@@ -4,11 +4,15 @@ import DGS from "./DGS";
 import GS from "../images/GS.jpg";
 import "../Styles/Footer.css";
 import Navbar from "./Navbar.jsx";
+import AnimatedCursor from "react-animated-cursor";
+
 
 const Alumni = () => {
   return (
     <>
+      <AnimatedCursor/>
       <Navbar />
+      
       <div className="bg-zinc-800 pb-5 px-[1rem] max-w-[100%]">
         <p className="text-slate-200 text-center typing2 mb-3">Our Alumni</p>
         <div className="">

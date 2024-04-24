@@ -39,7 +39,7 @@ const Team = () => {
                     <DGS
                       name="Sajal Sahu"
                       desig="Deputy Secretary General"
-                      img="https://media.licdn.com/dms/image/D5603AQG81N8ShmXdrg/profile-displayphoto-shrink_400_400/0/1672950265619?e=1718841600&v=beta&t=Vui9hO2ZUUJn6wACfp4ff0KMQEcAOComQkDVDXfBjJo"
+                      img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXkuNt1iZEOYd_mFuikHhiWW1tlrpZvhWkpANzH9NAw&s"
                       linkedin="https://www.linkedin.com/in/sajalsahu8/"
                       email="mailto:211210056@nitdelhi.ac.in"
                     />

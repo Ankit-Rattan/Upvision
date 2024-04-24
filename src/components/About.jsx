@@ -1,7 +1,20 @@
 import React from "react";
 import "../Styles/About.css";
-
+import ScrollReveal from "scrollreveal";
+import { useEffect } from "react";
 const About = () => {
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: "10px",
+      duration: 1000,
+      delay: 600,
+    });
+    ScrollReveal().reveal(".about-description", {
+      delay: 1500,
+      origin: "left",
+    });
+  }, []);
   return (
     <>
       <div className="about-section" id="about">
