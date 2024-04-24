@@ -3,6 +3,7 @@ import Logo from "../images/logo.png";
 import CLogo from "../images/nitdelhi.jpeg";
 import arrow from "../images/arrow.png";
 import "../Styles/Footer.css";
+import { Link } from "react-router-dom";
 
 // const backgroundImg = {
 //     backgroundImage: `url(${bg})`,
@@ -23,11 +24,14 @@ const Footer = () => {
         <div className="w-[25%]">
           <div className="text-center ">
             <div>
+            <Link to="/">
+              
               <img
                 className="shadow-emerald-600  shadow-md hover:shadow-lg hover:shadow-emerald-600 duration-500 h-[5rem] rounded-full m-auto"
                 src={Logo}
                 alt="Logo"
               />
+            </Link>
             </div>
 
             <div className="mt-5">

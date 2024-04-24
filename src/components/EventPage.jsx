@@ -67,7 +67,7 @@ function EventPage() {
     const EventPopup = ({ event }) => {
         return (
             <>
-                <div className="event-popup" id='events'>
+                <div className="event-popup" >
                     <AnimatedCursor />
                     <div className="event-popup-content">
                         <button className="close-button" onClick={() => toggleEventDetails(event.id)}>
@@ -85,7 +85,7 @@ function EventPage() {
 
     return (
         <>
-            <section className="event-page">
+            <section className="event-page" id='events'>
                 <AnimatedCursor />
                 <h2 className="event-page-title">Events</h2>
                 <div className="event-grid flex justify-evenly">

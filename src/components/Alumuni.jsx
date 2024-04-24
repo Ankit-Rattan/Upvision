@@ -13,10 +13,10 @@ const Alumni = () => {
       <AnimatedCursor/>
       <Navbar />
       
-      <div className="bg-zinc-800 pb-5 px-[1rem] max-w-[100%]">
+      <div className=" pb-5 px-[1rem] max-w-[100%]">
         <p className="text-slate-200 text-center typing2 mb-3">Our Alumni</p>
         <div className="">
-          <div className="bg-zinc-800 pb-5 px-[1rem] max-w-[100%]">
+          <div className=" pb-5 px-[1rem] max-w-[100%]">
             <div className="">
               <div className="allteam">
                 <div className="">
