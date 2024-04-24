@@ -98,7 +98,7 @@ function Message() {
           <li></li>
         </ul>
         <div>
-          <div className="ba-section ">
+          <div className="ba-section " id="dsw_msg">
             <div className="ba-text-content" id="director-msg">
               {/* <span>#NITDAlumni</span> */}
               <h1 className="ba-title">

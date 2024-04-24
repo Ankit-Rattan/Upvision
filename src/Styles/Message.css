@@ -105,12 +105,16 @@ body{
     }
     .manoj-section{
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin-top: 40px;
     }
 
     #manoj_msg{
         margin: 50px 50px;
+        flex-direction: column;
+    }
+    #dsw_msg{
+        /* margin: 50px 50px; */
         flex-direction: column-reverse;
     }
 
