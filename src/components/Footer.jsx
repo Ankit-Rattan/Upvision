@@ -15,7 +15,9 @@ import "../Styles/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer-bg">
+    <div id="footer">
+
+    <div className="footer-bg" >
       <div className="flex flex-wrap justify-around pt-5 m-auto p-3">
         {/* First Seciton */}
         <div className="w-[25%]">
@@ -260,6 +262,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
