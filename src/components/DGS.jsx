@@ -5,7 +5,7 @@ import email from "../images/email.png";
 const TeamCardSen = (prop) => {
   return (
     <>
-      <div className="bg-zinc-600 hover:translate-y-2 text-gray-300 w-fit p-[1rem] shadow-md shadow-emerald-400 rounded-md mb-[1rem ] hover:shadow-md duration-500">
+      <div className="bg-zinc-800 hover:translate-y-2 text-gray-300 w-fit p-[1rem] shadow-md shadow-emerald-400 rounded-md mb-[1rem ] hover:shadow-md duration-500">
         {/* Pic */}
         <div className="">
           <img
