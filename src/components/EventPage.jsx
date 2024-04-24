@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import '../Styles/EventPage.css';
-// import techodyssey from './techodyssey.jpg';
+// import techodyssey from '../images/techodyssey.jpg'; 
 import CODE_ON from '../images/CODE_ON.jpg';
-import resume from '../images/resume.jpg';
+import resume from '../images/resume.jpg'; 
+import Techphoria from '../images/Techphoria.jpg'; 
 import AnimatedCursor from 'react-animated-cursor';
-// import Techphoria from '../images/Techphoria.jpg';
 
 function EventPage() {
     const [events, setEvents] = useState([]);
@@ -40,15 +40,15 @@ function EventPage() {
         //     description: "UPVISION, the technical club of NIT Delhi in collaboration with Google Developer Student Club (GDSC), organized the technical extravaganza Tech Odyssey 2023. The event unfoldedwith enthusiasm and innovation, featuring three captivating events: the Interbranch Technical Quiz,Interbranch Technical Pictionary, and Interbranch Cryptographic Treasure Hunt. The event brought together tech enthusiasts from various branches, creating an electrifying atmosphere.There were a total of 4 teams for each event – CSE,ECE, EEE and ME+CIVIL.",
         //     image: techodyssey
         // },
-        // {
-        //     id: 4,
-        //     name: 'Techphoria',
-        //     date: 'April 10, 2024',
-        //     time: '9:00 AM - 9:00 PM',
-        //     location: 'NIT Delhi Campus',
-        //     description: 'TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highlyanticipated event on the 1st day with a series of informative and   engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors.',
-        //     image: Techphoria
-        // }    
+        {
+            id: 4,
+            name: 'Techphoria',
+            date: 'April 10, 2024',
+            time: '9:00 AM - 9:00 PM',
+            location: 'NIT Delhi Campus',
+            description: 'TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highlyanticipated event on the 1st day with a series of informative and   engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors.',
+            image: Techphoria
+        }    
     ];
 
     useEffect(() => {
@@ -83,7 +83,7 @@ function EventPage() {
         <section className="event-page">
     <AnimatedCursor/>
             <h2 className="event-page-title">Events</h2>
-            <div className="event-grid">
+            <div className="event-grid flex justify-evenly">
                 {events.map((event) => (
                     <div
                         key={event.id}

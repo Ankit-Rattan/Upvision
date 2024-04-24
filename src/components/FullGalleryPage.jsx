@@ -5,6 +5,7 @@ import '../Styles/GalleryPage.css';
 function FullGalleryPage({ imageData }) {
     return (
         <section className="gallery-page">
+        
             <h2 className="gallery-page-title">Full Image Gallery</h2>
             <div className="gallery-grid">
                 {imageData.map(image => (
