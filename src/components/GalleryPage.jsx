@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/GalleryPage.css";
+import PropTypes from "prop-types";
 
 function GalleryPage({ imageData }) {
   const images = Array.isArray(imageData) ? imageData.slice(0, 4) : [];
@@ -19,17 +20,28 @@ function GalleryPage({ imageData }) {
         ))}
       </div>
       <div className="text-center">
-      <button
-        onClick={() => setShowFullGallery(true)}
-        className="view-all-button"
-      >
-        <Link to="/fullgallery" className="view-all-link">
-          View All
-        </Link>
-      </button>
+        <button
+          onClick={() => setShowFullGallery(true)}
+          className="view-all-button"
+        >
+          <Link to="/fullgallery" className="view-all-link">
+            View All
+          </Link>
+        </button>
       </div>
     </section>
   );
 }
+
+GalleryPage.propTypes = {
+  imageData: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      src: PropTypes.string.isRequired,
+      alt: PropTypes.string.isRequired,
+      title: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default GalleryPage;
