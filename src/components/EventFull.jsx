@@ -7,6 +7,7 @@ import CODE_ON from '../images/CODE_ON.jpg';
 import resume from '../images/resume.jpg';
 import Techphoria from '../images/Techphoria.jpg';
 import AnimatedCursor from 'react-animated-cursor';
+import Navbar from './Navbar';
 
 function EventFull() {
     const [events, setEvents] = useState([]);
@@ -64,8 +65,9 @@ function EventFull() {
     const EventPopup = ({ event }) => {
         return (
             <>
-                <div className="event-popup" id='events'>
+            <Navbar/>
                     <AnimatedCursor />
+                <div className="event-popup" id='events'>
                     <div className="event-popup-content">
                         <button className="close-button" onClick={() => toggleEventDetails(event.id)}>
                             &times;
