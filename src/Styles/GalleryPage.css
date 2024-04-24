@@ -24,9 +24,11 @@
 }
 
 .thumbnail-image {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 15rem;
+    height: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+
     border-radius: 5px;
 }
 

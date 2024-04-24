@@ -76,7 +76,7 @@ function EventPage() {
             </div>
             </>
         );
-    };
+    };  
 
     return (
         <>
