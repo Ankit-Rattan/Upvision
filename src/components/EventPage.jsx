@@ -25,10 +25,10 @@ function EventPage() {
             id: 2,
           
             name: 'Resume',
-            date: 'April 10, 2024',
-            time: '9:00 AM - 9:00 PM',
-            location: 'NIT Delhi Campus',
-            description: '',
+            date: 'January 2, 2024',
+            time: '3:00 PM onwards',
+            location: 'Google Meet ',
+            description: 'UPVISION, the technical club of NIT Delhi, recently organized an online session titled &quot;Crafting Careers: Mastering the Art of Resume Building.&quot; Led by Ms. Arushi Jain, an esteemed alumni from the graduating batch of 2023, the session aimed to highlight the importance of impactful resumes and provide practical insights into creating them. Ms. Jain, drawing from her successful journey, shared valuable lessons on resume building, emphasizing its significance in today&#39;s competitive job market. The workshop focused on key components of a compelling resume, effective formatting tips, and strategies for tailoring resumes to specific opportunities. The objective was to equip students with tools to stand out and empower them on their career paths. Through interactive discussions and practical demonstrations, attendees gained a deeper understanding of resume construction and customization, setting them on the path to professional success.',
             image: resume
         },
         // {
@@ -43,9 +43,9 @@ function EventPage() {
         {
             id: 4,
             name: 'Techphoria',
-            date: 'April 10, 2024',
-            time: '9:00 AM - 9:00 PM',
-            location: 'NIT Delhi Campus',
+            date: 'October 17-18, 2023',
+            time: '4PM onwards',
+            location: 'NIT Delhi Auditorium',
             description: 'TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highlyanticipated event on the 1st day with a series of informative and   engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors.',
             image: Techphoria
         }    
