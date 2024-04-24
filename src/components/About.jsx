@@ -11,7 +11,7 @@ const About = () => {
       delay: 600,
     });
     ScrollReveal().reveal(".about-description", {
-      delay: 1500,
+      delay: 1000,
       origin: "left",
     });
   }, []);
