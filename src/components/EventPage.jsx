@@ -28,7 +28,8 @@ function EventPage() {
       date: "April 10, 2024",
       time: "9:00 AM - 9:00 PM",
       location: "NIT Delhi Campus",
-      description: "",
+      description:
+        "UPVISION, the technical club of NIT Delhi, organized an online session titled- &quot;",
       image: resume,
     },
   ];
