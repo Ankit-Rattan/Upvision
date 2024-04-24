@@ -18,7 +18,7 @@ function GalleryPage({ imageData }) {
           </div>
         ))}
       </div>
-
+      <div className="text-center">
       <button
         onClick={() => setShowFullGallery(true)}
         className="view-all-button"
@@ -27,6 +27,7 @@ function GalleryPage({ imageData }) {
           View All
         </Link>
       </button>
+      </div>
     </section>
   );
 }
