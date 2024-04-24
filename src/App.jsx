@@ -9,6 +9,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Loader from "./components/Loader";
 import Alumuni from "./components/Alumuni";
 import FullGalleryPage from "./components/FullGalleryPage";
+import EventFull from "./components/EventFull";
+import Hero from "./components/Hero";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -29,11 +31,13 @@ function App() {
           <BrowserRouter>
             <div>
               <Routes>
-                <Route path="/" element={<Home />} />
+                <Route path="/hero" element={<Hero/>} />
+                <Route path="/" element={<Home/>} />
                 <Route path="/Contact-Us" element={<Footer />} />
                 <Route path="/allteam" element={<AllTeam />} />
                 <Route path="/alumni" element={<Alumuni />} />
                 <Route path="/fullgallery" element={<FullGalleryPage />} />
+                <Route path="/eventfull" element={<EventFull />} />
               </Routes>
               <Footer />
             </div>

@@ -26,9 +26,9 @@ function Navbar() {
         </h1>
         <ul className="navbar-items">
           <li>
-            <Link to="/" className="navbar-links">
+            <a href="#hero" className="navbar-links">
               Home
-            </Link>
+            </a>
           </li>
           <li>
             <a href="#about" className="navbar-links">
