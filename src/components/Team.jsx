@@ -8,7 +8,7 @@ import Navbar from "./Navbar.jsx";
 const Team = () => {
   return (
     <>
-      <div className="black pb-5  p-[5rem] max-w-[100%] ">
+      <div className="black pb-5  p-[5rem] max-w-[100%] " id="team">
         <div className="">
           <p className=" team-title text-slate-200 text-center ">
             <span>Our Team</span>

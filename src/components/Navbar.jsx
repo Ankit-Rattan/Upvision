@@ -57,7 +57,7 @@ function Navbar() {
           </li>
 
           <li>
-            <a href="#contact" className="navbar-links">
+            <a href="#footer" className="navbar-links">
               Contact Us
             </a>
           </li>
@@ -79,17 +79,17 @@ function Navbar() {
               </Link>
             </li>
             <li>
-              <a onClick={openNav} href="#services">
+              <a onClick={openNav} href="#events">
                 Events
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="#about">
+              <a onClick={openNav} href="#team">
                 Team
               </a>
             </li>
             <li>
-              <a onClick={openNav} href="#reviews">
+              <a onClick={openNav} href="#">
                 Contact Us
               </a>
             </li>
