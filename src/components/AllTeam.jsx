@@ -14,7 +14,7 @@ const AllTeam = () => {
     <>
       <Navbar />
       <AnimatedCursor/>
-      <div className="bg-zinc-800 pb-5 p-[5rem]  max-w-[100%]">
+      <div className=" pb-5 p-[5rem]  max-w-[100%]">
         <div>
           <p className="text-slate-200 typing">Our Team</p>
           <div className="items-center shadow-md my-5">

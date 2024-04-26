@@ -226,21 +226,21 @@ const Footer = () => {
                 </li>
                 <li className="flex">
                   <img src={arrow} alt="arrow" />
-                  <a className="hover:text-emerald-500" href="#">
+                  <Link className="hover:text-emerald-500" href="/">
                     About
-                  </a>
+                  </Link>
                 </li>
                 <li className="flex">
                   <img src={arrow} alt="arrow" />
-                  <a className="hover:text-emerald-500" href="#">
+                  <Link className="hover:text-emerald-500" href="/allteam">
                     Team
-                  </a>
+                  </Link>
                 </li>
                 <li className="flex">
                   <img src={arrow} alt="arrow" />
-                  <a className="hover:text-emerald-500" href="#">
+                  <Link className="hover:text-emerald-500" href="/eventfull">
                     Events
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

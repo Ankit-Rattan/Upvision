@@ -26,9 +26,9 @@ function Navbar() {
         </h1>
         <ul className="navbar-items">
           <li>
-            <a href="#hero" className="navbar-links">
+            <Link to="/" className="navbar-links">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#about" className="navbar-links">
@@ -46,9 +46,9 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#team" className="navbar-links">
+            <Link to="/allteam" className="navbar-links">
               Team
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#alumni" className="navbar-links">

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useState, useEffect } from "react";
 import "../Styles/EventPage.css";
 import techodyssey from "../images/techodyssey.jpg";
@@ -6,17 +5,7 @@ import CODE_ON from "../images/CODE_ON.jpg";
 import resume from "../images/resume.jpg";
 import Techphoria from "../images/Techphoria.jpg";
 import AnimatedCursor from "react-animated-cursor";
-=======
-import React, { useState, useEffect } from 'react';
-import '../Styles/EventPage.css';
-import "../Styles/GalleryPage.css";
-import techodyssey from '../images/techodyssey.jpg';
-import CODE_ON from '../images/CODE_ON.jpg';
-import resume from '../images/resume.jpg';
-import Techphoria from '../images/Techphoria.jpg';
-import AnimatedCursor from 'react-animated-cursor';
-import { Link } from 'react-router-dom';
->>>>>>> d24c7ff0ac0f7c92dde2a70f8e295ffcdfc3dc18
+import { Link } from "react-router-dom";
 
 function EventPage() {
     const [events, setEvents] = useState([]);
@@ -27,35 +16,6 @@ function EventPage() {
         {
             id: 1,
 
-<<<<<<< HEAD
-      name: "Resume",
-      date: "April 10, 2024",
-      time: "9:00 AM - 9:00 PM",
-      location: "NIT Delhi Campus",
-      description:
-        "UPVISION, the technical club of NIT Delhi, organized an online session titled \"Crafting Careers: Mastering the Art of Resume Building.\" Led by Ms. Arushi Jain, an esteemed alumni from the graduating batch of 2023, the session aimed to highlight the importance of impactful resumes and provide practical insights into creating them. The session commenced with a detailed overview of the workshop's agenda, outlining the key areas to be covered. Following this, the participants were introduced to the expert guide for the session, Ms. Arushi Jain. Ms. Jain's credentials as a distinguished alumna from the 2023 graduating batch of B.Tech in Electrical and Electronics Engineering (EEE), along with her achievement of securing the highest package in her cohort, immediately established her credibility as a mentor in the realm of career development. Currently serving as a Software Development Engineer (SDE) in the Commerce-IT team at Atlassian, Ms. Jain brought a wealth of real-world experience to the table, enriching the session with practical insights. Ms. Jain, drawing from her successful journey, shared valuable lessons on resume building, emphasizing its significance in today's competitive job market. The workshop focused on key components of a compelling resume, effective formatting tips, and strategies for tailoring resumes to specific opportunities. The objective was to equip students with tools to stand out and empower them on their career paths. Through interactive discussions and practical demonstrations, attendees gained a deeper understanding of resume construction and customization, setting them on the path to professional success. Overall, Ms. Arushi Jain's expert guidance and practical insights transformed the resume-building workshop into a highly enriching and empowering experience for all participants, paving the way for their success in the competitive job market. The resume building workshop facilitated a crucial exchange of insights and expertise, allowing students to address lingering uncertainties that often hinder their career development. Understanding that a resume transcends a mere chronological list of experiences, but rather serves as a personalized marketing tool, the session endeavored to imbue each participant's resume with a distinct narrative and compelling essence. By elucidating the intricacies of resume construction, the workshop aimed to empower students to transform their resumes into powerful reflections of their unique professional identities. Through the guidance of Ms. Arushi Jain, a luminary in her own right and a beacon of success for many, attendees were equipped with the knowledge and strategies necessary to craft resumes that truly stand out amidst a sea of applicants. Ms. Jain's wealth of experience and insightful perspectives not only demystified the process of resume building but also inspired attendees to approach their own career trajectories with renewed vigor and purpose.",
-      image: resume,
-    },
-    // {
-    //   id: 3,
-    //   name: "Tech Odyssey 2023",
-    //   date: "November 23, 2023",
-    //   time: "4 PM Onwards",
-    //   location: "NIT Delhi Auditorium",
-    //   description: " ",
-    //   image: techodyssey,
-    // },
-    {
-      id: 4,
-      name: "Techphoria",
-      date: "October 17-18, 2023",
-      time: "4PM onwards",
-      location: "NIT Delhi Auditorium",
-      description: "",
-      image: Techphoria,
-    },
-  ];
-=======
             name: "CODE ON",
             date: "April 3, 2024",
             time: "4:00 PM onwards",
@@ -66,7 +26,6 @@ function EventPage() {
         },
         {
             id: 2,
->>>>>>> d24c7ff0ac0f7c92dde2a70f8e295ffcdfc3dc18
 
             name: "Resume",
             date: "April 10, 2024",
