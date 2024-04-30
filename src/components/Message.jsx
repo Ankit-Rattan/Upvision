@@ -11,6 +11,10 @@ import { text } from "@fortawesome/fontawesome-svg-core";
 import myGif from "../images/Robot1.gif";
 import ScrollReveal from "scrollreveal";
 function Message() {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 60966ea6fb9dea8b3e02d156c6372bb18ca356f1
   useEffect(() => {
     ScrollReveal({
       reset: true,
@@ -49,6 +53,8 @@ function Message() {
     navigate("/");
   };
 
+
+
   return (
     <div id="message">
       <div className="area">
@@ -66,7 +72,15 @@ function Message() {
         </ul>
         <div>
           <div className="Robot_gif">
+<<<<<<< HEAD
             <img src={myGif} alt="my-gif" className="robot_vid " />
+=======
+            <img
+              src={myGif}
+              alt="my-gif"
+              className="robot_vid "
+            />
+>>>>>>> 60966ea6fb9dea8b3e02d156c6372bb18ca356f1
           </div>
           <div className="ba-section ">
             <div className="ba-image-content director-img ">
