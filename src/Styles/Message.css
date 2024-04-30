@@ -6,7 +6,7 @@ body{
 
 .ba-section {
     color: aliceblue;
-    height: auto;
+    /* height: auto; */
     padding: 32px;
     display: flex;
     justify-content: center;

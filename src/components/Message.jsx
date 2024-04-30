@@ -10,7 +10,6 @@ import "../Styles/Message.css";
 import myGif from "../images/Robot1.gif";
 import ScrollReveal from "scrollreveal";
 function Message() {
-
   useEffect(() => {
     ScrollReveal({
       reset: true,
@@ -48,8 +47,6 @@ function Message() {
   const messageClick = () => {
     navigate("/");
   };
-
-
 
   return (
     <div id="message">
