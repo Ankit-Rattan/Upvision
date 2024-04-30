@@ -9,26 +9,26 @@ import image4 from "../images/techp15.jpg";
 import ScrollReveal from "scrollreveal";
 
 function GalleryPage() {
-	useEffect(() => {
-		ScrollReveal({
-		  reset: true,
-		  distance: "10px",
-		  duration: 800,
-		  delay: 600,
-		});
-		ScrollReveal().reveal(".techody", {
-		  delay: 600,
-		  origin: "right",
-		});
-		ScrollReveal().reveal(".techp", {
-		  delay: 600,
-		  origin: "left",
-		});
-		ScrollReveal().reveal(".resume", {
-		  delay: 600,
-		  origin: "right",
-		});
-	  }, []);
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: "10px",
+      duration: 800,
+      delay: 600,
+    });
+    ScrollReveal().reveal(".techody", {
+      delay: 600,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".techp", {
+      delay: 600,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".resume", {
+      delay: 600,
+      origin: "right",
+    });
+  }, []);
   const imageData = [
     {
       id: 1,
@@ -58,57 +58,53 @@ function GalleryPage() {
 
   return (
     <>
-	<div>
-	<p className="text-center text-4xl text-gray-200 font-bold mb-5"> Image Gallery</p>
-	</div>
-    <ul>
-		<li>
-			<a href="">
-				<figure className="techody">
-					<img src={image1} alt=''/>
-					<figcaption>Tech Odyssey</figcaption>
-				</figure>
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<figure className="techp">
-					<img src={image2} alt=''/>
-					<figcaption>Techphoria</figcaption>
-				</figure>
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<figure className="resume">
-					<img src={image3} alt=''/>
-					<figcaption>Resume workshop</figcaption>
-				</figure>
-			</a>
-		</li>
-		<li>
-			<a href="">
-				<figure className="techp">
-					<img src={image4} alt=''/>
-					<figcaption>Techphoria</figcaption>
-				</figure>
-			</a>
-		</li>
-
-	</ul>
-	<div className='text-center'>
-
-	<button className='view-all-button'> 
-                    <Link to="/fullgallery">
-
-                        Veiw All Captures
-                    </Link>
-                    </button>
-                </div>
+      <div>
+        <p className="text-center text-4xl text-gray-200 font-bold mb-5">
+          {" "}
+          Image Gallery
+        </p>
+      </div>
+      <ul>
+        <li>
+          <a href="">
+            <figure className="techody">
+              <img src={image1} alt="" />
+              <figcaption>Tech Odyssey</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <figure className="techp">
+              <img src={image2} alt="" />
+              <figcaption>Techphoria</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <figure className="resume">
+              <img src={image3} alt="" />
+              <figcaption>Resume workshop</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li>
+          <a href="">
+            <figure className="techp">
+              <img src={image4} alt="" />
+              <figcaption>Techphoria</figcaption>
+            </figure>
+          </a>
+        </li>
+      </ul>
+      <div className="text-center">
+        <button className="view-all-button">
+          <Link to="/fullgallery">Veiw All Captures</Link>
+        </button>
+      </div>
     </>
   );
 }
-
-
 
 export default GalleryPage;
