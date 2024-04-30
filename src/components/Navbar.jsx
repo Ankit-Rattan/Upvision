@@ -85,6 +85,11 @@ function Navbar() {
               </Link>
             </li>
             <li>
+              <a onClick={openNav} href="#message">
+                Message
+              </a>
+            </li>
+            <li>
               <a onClick={openNav} href="#events">
                 Events
               </a>
@@ -92,6 +97,11 @@ function Navbar() {
             <li>
               <a onClick={openNav} href="#team">
                 Team
+              </a>
+            </li>
+            <li>
+              <a onClick={openNav} href="#alumni">
+                Alumni
               </a>
             </li>
             <li>

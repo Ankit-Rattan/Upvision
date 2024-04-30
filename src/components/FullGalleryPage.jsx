@@ -23,6 +23,7 @@ import image38 from "../images/resume1.jpg";
 import image39 from "../images/resume2.jpg";
 import image40 from "../images/resume3.jpg";
 import Navbar1 from "./Navbar1";
+import AnimatedCursor from "react-animated-cursor";
 
 function FullGalleryPage() {
   const  resume = [
@@ -149,6 +150,7 @@ function FullGalleryPage() {
   
   return (
     <>
+    <AnimatedCursor/>
     <section className="gallery-page">
       <h2 className="gallery-page-title mb-[2rem]">Image Gallery</h2>
       <hr className="m-[1rem]"/>

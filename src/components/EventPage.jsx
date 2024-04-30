@@ -38,8 +38,8 @@ function EventPage() {
  
     const EventsData = [
 
-        {
-            id: 1,
+    {
+      id: 1,
 
             name: "CODE ON",
             date: "April 3, 2024",
@@ -60,15 +60,15 @@ function EventPage() {
             "UPVISION at NIT Delhi hosted an online session on -Crafting Careers: Mastering the Art of Resume Building, led by distinguished alumna Ms. Arushi Jain. Ms. Jain, a Software Development Engineer at Atlassian, shared practical insights and strategies for creating impactful resumes. The session aimed to empower students to tailor their resumes to stand out in the competitive job market. Through interactive discussions, attendees gained valuable tips for constructing compelling resumes, setting them on the path to professional success. Ms. Jain's guidance inspired attendees to approach their career paths with renewed confidence and purpose.",
             image: resume,
         },
-        // {
-        //     id: 3,
-        //     name: 'Tech Odyssey 2023',
-        //     date: 'November 23, 2023',
-        //     time: '4 PM Onwards',
-        //     location: 'NIT Delhi Auditorium',
-        //     description: " ",
-        //     image: techodyssey
-        // },
+        {
+            id: 3,
+            name: 'Tech Odyssey 2023',
+            date: 'November 23, 2023',
+            time: '4 PM Onwards',
+            location: 'NIT Delhi Auditorium',
+            description: " ",
+            image: techodyssey
+        },
         {
             id: 4,
             name: 'Techphoria',
@@ -93,61 +93,73 @@ function EventPage() {
         }, 500);
     };
 
-    const EventPopup = ({ event }) => {
-        return (
-            <>
-                <div className="pop-up  event-popup" >
-                    <AnimatedCursor />
-                    <div className=" event-popup-content">
-                        <button className="close-button" onClick={() => toggleEventDetails(event.id)}>
-                            &times;
-                        </button>
-                        <h3 className="event-popup-title">{event.name}</h3>
-                        <p className="event-popup-date-time">{event.date} | {event.time}</p>
-                        <p className="event-popup-location">{event.location}</p>
-                        <p className=" event-popup-description">{event.description}</p>
-                    </div>
-                </div>
-            </>
-        );
-    };
 
+
+  const EventPopup = ({ event }) => {
     return (
-        <>
-            <section className="event-page mb-[3rem]" id='events'>
-                <AnimatedCursor />
-                <h2 className="event-page-title event-title">Events</h2>
-                <div className="event-main event-grid flex justify-evenly">
-                    {events.map((event) => (
-                        <div
-                            key={event.id}
-                            className={`event-poster ${activeEvent === event.id ? 'active' : ''}`}
-                            onClick={() => toggleEventDetails(event.id)}
-                        >
-                            <img
-                                src={event.image}
-                                alt={event.name}
-                                className="event-poster-image event-img"
-                            />
-                            <h3 className="event-poster-title">{event.name}</h3>
-                        </div>
-                    ))}
-                </div>
-                <div className='text-center'>
+      <>
+        <div className="event-popup">
+          <AnimatedCursor />
 
-                    <button className='view-all-button'> 
-                    <Link to="/eventfull">
-
-                        All Events
-                    </Link>
-                    </button>
-                </div>
-
-                {activeEvent && <EventPopup event={events.find((event) => event.id === activeEvent)} />}
-
-            </section>
-        </>
+          <div className="event-popup-content">
+            <button
+              className="close-button"
+              onClick={() => toggleEventDetails(event.id)}
+            >
+              &times;
+            </button>
+            <h3 className="event-popup-title">{event.name}</h3>
+            <p className="event-popup-date-time">
+              {event.date} | {event.time}
+            </p>
+            <p className="event-popup-location">{event.location}</p>
+            <p className="event-popup-description">{event.description}</p>
+          </div>
+        </div>
+      </>
     );
+  };
+
+  return (
+    <>
+      <section className="event-page" id="events">
+        <AnimatedCursor />
+
+        <h2 className="event-page-title">
+          <span>EVENTS</span>
+        </h2>
+        <div className="event-main event-grid flex justify-evenly">
+          {events.map((event) => (
+            <div
+              key={event.id}
+              className={`event-poster ${
+                activeEvent === event.id ? "active" : ""
+              }`}
+              onClick={() => toggleEventDetails(event.id)}
+            >
+              <img
+                src={event.image}
+                alt={event.name}
+                className="event-poster-image"
+              />
+              <h3 className="event-poster-title">{event.name}</h3>
+            </div>
+          ))}
+        </div>
+        <div className="text-center">
+          <button className="view-all-button">
+            <Link to="/eventfull">All Events</Link>
+          </button>
+        </div>
+
+        {activeEvent && (
+          <EventPopup
+            event={events.find((event) => event.id === activeEvent)}
+          />
+        )}
+      </section>
+    </>
+  );
 }
 
 export default EventPage;

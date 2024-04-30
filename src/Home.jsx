@@ -12,8 +12,8 @@ import Navbar from "./components/Navbar";
 import Message from "./components/Message";
 import AnimatedCursor from "react-animated-cursor";
 import About from "./components/About";
-// import TeamCard from './components/GS'
-import Vanta from "./components/Vanta";
+
+
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      {/* <ProjectCard /> */}
       <Message />
       <EventPage />
       <GalleryPage />

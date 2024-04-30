@@ -2,7 +2,7 @@
     padding: 20px;
     max-width: 100%;
     background-color: black;
-    
+    margin: 50px auto;
 }
 
 .event-page-title {
@@ -132,5 +132,4 @@
     line-height: 1.6;
     color: whitesmoke;
 }
-
 

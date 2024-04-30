@@ -51,7 +51,7 @@ function GalleryPage() {
       alt: "Image 4",
     },
   ];
-  
+
   const images = Array.isArray(imageData) ? imageData.slice(0, 4) : [];
 
   const [showFullGallery, setShowFullGallery] = useState(false);

@@ -16,31 +16,31 @@ function Message() {
     ScrollReveal({
       reset: true,
       distance: "4rem",
-      duration: 1500,
+      duration: 1000,
       delay: 500,
     });
     ScrollReveal().reveal(".director-msg", {
-      delay: 700,
+      delay: 400,
       origin: "right",
     });
     ScrollReveal().reveal(".director-img", {
-      delay: 800,
+      delay: 400,
       origin: "left",
     });
     ScrollReveal().reveal(".dsw-msg", {
-      delay: 800,
+      delay: 400,
       origin: "right",
     });
     ScrollReveal().reveal(".dsw-img", {
-      delay: 800,
+      delay: 400,
       origin: "right",
     });
     ScrollReveal().reveal(".coor-msg", {
-      delay: 800,
+      delay: 400,
       origin: "left",
     });
     ScrollReveal().reveal(".coor-img", {
-      delay: 500,
+      delay: 400,
       origin: "left",
     });
   }, []);
