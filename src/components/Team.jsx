@@ -1,11 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import DGS from "./DGS";
 import GS from "../images/GS.jpg";
 import "../Styles/Footer.css";
 import Navbar from "./Navbar.jsx";
+import ScrollReveal from "scrollreveal";
+
 
 const Team = () => {
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: "10px",
+      duration: 1000,
+      delay: 600,
+    });
+    ScrollReveal().reveal(".team-title", {
+      delay: 600,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".team-gs", {
+      delay: 600,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".team-dgs1", {
+      delay: 600,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".team-dgs2", {
+      delay: 600,
+      origin: "left",
+    });
+  }, []);
   return (
     <>
       <div className="black pb-5  p-[5rem] max-w-[100%] " id="team">
@@ -17,7 +43,7 @@ const Team = () => {
             <div className="">
               <div className="">
                 <div className="flex justify-between flex-wrap">
-                  <div>
+                  <div className="team-gs">
                     <DGS
                       name="Vaishnv Raju"
                       desig="General Secretary"
@@ -26,7 +52,7 @@ const Team = () => {
                       email="mailto:techclub@nitdelhi.ac.in"
                     />
                   </div>
-                  <div>
+                  <div className="team-dgs1">
                     <DGS
                       name="Sudhanshu Shrivastava"
                       desig="Deputy Secretary General"
@@ -35,7 +61,7 @@ const Team = () => {
                       email="mailto:sudhanshushrivastava004@gmail.com"
                     />
                   </div>
-                  <div>
+                  <div className="team-dgs2">
                     <DGS
                       name="Sajal Sahu"
                       desig="Deputy Secretary General"

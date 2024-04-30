@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
+import college from "../images/nitdelhi.jpeg"
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -41,9 +42,9 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#events" className="navbar-links">
+            <Link to="/eventfull" className="navbar-links">
               Events
-            </a>
+            </Link>
           </li>
           <li>
             <Link to="/allteam" className="navbar-links">
@@ -62,6 +63,11 @@ function Navbar() {
             </a>
           </li>
         </ul>
+        <h1 className="">
+          <a href="https://nitdelhi.ac.in/">
+            <img src={college} className=" rounded-full h-[5rem] w-[5rem]" />
+          </a>
+        </h1>
         <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
           <div onClick={openNav} className="mobile-navbar-close">
             <FontAwesomeIcon icon={faXmark} className="hamb-icon" />

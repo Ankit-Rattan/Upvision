@@ -7,7 +7,7 @@ import CODE_ON from '../images/CODE_ON.jpg';
 import resume from '../images/resume.jpg';
 import Techphoria from '../images/Techphoria.jpg';
 import AnimatedCursor from 'react-animated-cursor';
-import Navbar from './Navbar';
+import Navbar1 from './Navbar1';
 
 function EventFull() {
     const [events, setEvents] = useState([]);
@@ -65,7 +65,6 @@ function EventFull() {
     const EventPopup = ({ event }) => {
         return (
             <>
-            <Navbar/>
                     <AnimatedCursor />
                 <div className="event-popup" id='events'>
                     <div className="event-popup-content">
@@ -82,9 +81,10 @@ function EventFull() {
             </>
         );
     };
-
+    
     return (
         <>
+    <Navbar1/>
             <section className="event-page">
                 <AnimatedCursor />
                 <h2 className="event-page-title">Events</h2>

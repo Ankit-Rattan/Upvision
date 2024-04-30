@@ -1,5 +1,4 @@
-import React from "react";
-import exec from "../images/test.jpg";
+import React, { useEffect } from "react";
 import GS from "../images/GS.jpg";
 import TeamCard from "./TeamCard";
 import DGS from "./DGS";
@@ -8,20 +7,48 @@ import Volunteers from "./Volunteers";
 import "../Styles/Team.css";
 import Navbar from "./Navbar";
 import AnimatedCursor from "react-animated-cursor";
+import ScrollReveal from "scrollreveal";
 
 const AllTeam = () => {
+
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: "100px",
+      duration: 700,
+      delay: 600,
+    });
+    ScrollReveal().reveal(".team-title", {
+      delay: 800,
+      origin: "top",
+    });
+    ScrollReveal().reveal(".first", {
+      delay: 800,
+      origin: "bottom",
+    });
+    ScrollReveal().reveal(".second", {
+      delay: 800,
+      origin: "top",
+    });
+    ScrollReveal().reveal(".third", {
+      delay: 800,
+      origin: "bottom",
+    });
+  }, []);
+
+
   return (
     <>
       <Navbar />
       <AnimatedCursor/>
-      <div className=" pb-5 p-[5rem]  max-w-[100%]">
+      <div className=" pb-5 p-[3rem]  max-w-[100%]">
         <div>
-          <p className="text-slate-200 typing">Our Team</p>
+          <p className=" team-title text-slate-200  text-center text-4xl mb-[3rem] font-semiboldch">Our Team</p>
           <div className="items-center shadow-md my-5">
             <div className="team">
               {/* DGS, GS */}
               <div className="">
-                <div className="flex justify-around flex-wrap ">
+                <div className="first flex justify-around flex-wrap ">
                   <div>
                     <DGS
                       name="Vaishnv Raju"
@@ -53,10 +80,14 @@ const AllTeam = () => {
               </div>
               {/* Exec */}
               <div className="allteam">
+              <div className="second">
                 <Executive />
-                <hr className="my-[1rem] w-full" />
+              </div>
+                <hr className=" my-[1rem] w-full" />
                 {/* Volunteer */}
+                <div className="third">
                 <Volunteers />
+                </div>
               </div>
             </div>
           </div>

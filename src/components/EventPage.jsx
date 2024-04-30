@@ -6,12 +6,37 @@ import resume from "../images/resume.jpg";
 import Techphoria from "../images/Techphoria.jpg";
 import AnimatedCursor from "react-animated-cursor";
 import { Link } from "react-router-dom";
+import ScrollReveal from "scrollreveal";
+
 
 function EventPage() {
+    
+    useEffect(() => {
+        ScrollReveal({
+          reset: true,
+          distance: "10px",
+          duration: 500,
+          delay: 600,
+        });
+        ScrollReveal().reveal(".event-main", {
+          delay: 600,
+          origin: "left",
+        });
+        ScrollReveal().reveal(".event-title", {
+          delay: 700,
+          origin: "right",
+        });
+        ScrollReveal().reveal(".pop-up", {
+          delay: 700,
+          origin: "bottom",
+        });
+      }, []);
+
     const [events, setEvents] = useState([]);
     const [activeEvent, setActiveEvent] = useState(null);
-
-    const exampleEventsData = [
+    const [popupVisible, setPopupVisible] = useState(false); // New state to control popup visibility
+ 
+    const EventsData = [
 
         {
             id: 1,
@@ -21,7 +46,7 @@ function EventPage() {
             time: "4:00 PM onwards",
             location: "NIT Delhi Auditorium",
             description:
-                "Amidst the vibrant atmosphere of NIT Delhi, the Technical Club's CodeON Festive Edition unfolded, showcasing a celebration of talent, dedication, and innovation in the realm of coding. From the initial call for participation, met with an overwhelming response, to the culminating moments of intense competition and camaraderie, the event stood as a testament to the spirit of excellence embodied by the students. Held on April 3rd, 2024, at LT-6, Mini Campus, NIT Delhi, the event attracted an array of first and second-year B.Tech students eager to put their coding skills to the test. With a meticulously crafted series of challenges, participants delved into the intricacies of problem-solving, each submission a testament to their ingenuity and perseverance. Following rigorous evaluation, the winners emerged, their names now etched in the annals of CodeON history. Jesna Vinod and Shivam Patidar claimed top honors in the first-year category, while Jugnu Gupta and Shreyansh Gupta emerged victorious in the second-year category, each bestowed with merit certificates and generous cash prizes. Their triumphs, however, merely symbolize the collective success of all participants, whose unwavering enthusiasm and dedication propelled the event to new heights. As the curtains draw on this exhilarating chapter of CodeON, we extend our heartfelt gratitude to all participants for their invaluable contributions, and we eagerly anticipate the next chapter in our journey of exploration, learning, and innovation",
+            "The CodeON Festive Edition at NIT Delhi showcased a vibrant celebration of coding talent, with overwhelming participation from first and second-year B.Tech students. Held amidst intense competition, participants tackled meticulously crafted challenges, showcasing their ingenuity and dedication. *Jesna Vinod and Shivam Patidar claimed top honors in the first-year category, while Jugnu Gupta and Shreyansh Gupta emerged victorious in the second-year category*, each bestowed with merit certificates and generous cash prizes. Their success reflects the collective spirit of all participants. The event concluded with gratitude towards contributors, eagerly anticipating future exploration and learning opportunities.",
             image: CODE_ON,
         },
         {
@@ -29,10 +54,10 @@ function EventPage() {
 
             name: "Resume",
             date: "April 10, 2024",
-            time: "9:00 AM - 9:00 PM",
+            time: "3:00 PM - 6:00 PM",
             location: "NIT Delhi Campus",
             description:
-                "UPVISION, the technical club of NIT Delhi, organized an online session titled \"Crafting Careers: Mastering the Art of Resume Building.\" Led by Ms. Arushi Jain, an esteemed alumni from the graduating batch of 2023, the session aimed to highlight the importance of impactful resumes and provide practical insights into creating them. The session commenced with a detailed overview of the workshop's agenda, outlining the key areas to be covered. Following this, the participants were introduced to the expert guide for the session, Ms. Arushi Jain. Ms. Jain's credentials as a distinguished alumna from the 2023 graduating batch of B.Tech in Electrical and Electronics Engineering (EEE), along with her achievement of securing the highest package in her cohort, immediately established her credibility as a mentor in the realm of career development. Currently serving as a Software Development Engineer (SDE) in the Commerce-IT team at Atlassian, Ms. Jain brought a wealth of real-world experience to the table, enriching the session with practical insights. Ms. Jain, drawing from her successful journey, shared valuable lessons on resume building, emphasizing its significance in today's competitive job market. The workshop focused on key components of a compelling resume, effective formatting tips, and strategies for tailoring resumes to specific opportunities. The objective was to equip students with tools to stand out and empower them on their career paths. Through interactive discussions and practical demonstrations, attendees gained a deeper understanding of resume construction and customization, setting them on the path to professional success. Overall, Ms. Arushi Jain's expert guidance and practical insights transformed the resume-building workshop into a highly enriching and empowering experience for all participants, paving the way for their success in the competitive job market. The resume building workshop facilitated a crucial exchange of insights and expertise, allowing students to address lingering uncertainties that often hinder their career development. Understanding that a resume transcends a mere chronological list of experiences, but rather serves as a personalized marketing tool, the session endeavored to imbue each participant's resume with a distinct narrative and compelling essence. By elucidating the intricacies of resume construction, the workshop aimed to empower students to transform their resumes into powerful reflections of their unique professional identities. Through the guidance of Ms. Arushi Jain, a luminary in her own right and a beacon of success for many, attendees were equipped with the knowledge and strategies necessary to craft resumes that truly stand out amidst a sea of applicants. Ms. Jain's wealth of experience and insightful perspectives not only demystified the process of resume building but also inspired attendees to approach their own career trajectories with renewed vigor and purpose.",
+            "UPVISION at NIT Delhi hosted an online session on -Crafting Careers: Mastering the Art of Resume Building, led by distinguished alumna Ms. Arushi Jain. Ms. Jain, a Software Development Engineer at Atlassian, shared practical insights and strategies for creating impactful resumes. The session aimed to empower students to tailor their resumes to stand out in the competitive job market. Through interactive discussions, attendees gained valuable tips for constructing compelling resumes, setting them on the path to professional success. Ms. Jain's guidance inspired attendees to approach their career paths with renewed confidence and purpose.",
             image: resume,
         },
         // {
@@ -50,32 +75,37 @@ function EventPage() {
             date: 'October 17-18, 2023',
             time: '4PM onwards',
             location: 'NIT Delhi Auditorium',
-            description: "",
+            description: "TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highly anticipated event on the 1st day with a series of informative and engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors. The day commenced with a presentation by officials from the Bureau of Indian Standards. They enlightened the audience, primarily comprising students, about the crucial role BIS plays in setting and maintaining quality standards for various products.",
             image: Techphoria
         }
     ];
 
     useEffect(() => {
-        setEvents(exampleEventsData);
+        setEvents(EventsData);
     }, []);
 
     const toggleEventDetails = (eventId) => {
         setActiveEvent(activeEvent === eventId ? null : eventId);
+
+        setTimeout(() => {
+            setActiveEvent(activeEvent === eventId ? null : eventId);
+            setPopupVisible(!popupVisible);
+        }, 500);
     };
 
     const EventPopup = ({ event }) => {
         return (
             <>
-                <div className="event-popup" >
+                <div className="pop-up  event-popup" >
                     <AnimatedCursor />
-                    <div className="event-popup-content">
+                    <div className=" event-popup-content">
                         <button className="close-button" onClick={() => toggleEventDetails(event.id)}>
                             &times;
                         </button>
                         <h3 className="event-popup-title">{event.name}</h3>
                         <p className="event-popup-date-time">{event.date} | {event.time}</p>
                         <p className="event-popup-location">{event.location}</p>
-                        <p className="event-popup-description">{event.description}</p>
+                        <p className=" event-popup-description">{event.description}</p>
                     </div>
                 </div>
             </>
@@ -84,10 +114,10 @@ function EventPage() {
 
     return (
         <>
-            <section className="event-page" id='events'>
+            <section className="event-page mb-[3rem]" id='events'>
                 <AnimatedCursor />
-                <h2 className="event-page-title">Events</h2>
-                <div className="event-grid flex justify-evenly">
+                <h2 className="event-page-title event-title">Events</h2>
+                <div className="event-main event-grid flex justify-evenly">
                     {events.map((event) => (
                         <div
                             key={event.id}
@@ -97,7 +127,7 @@ function EventPage() {
                             <img
                                 src={event.image}
                                 alt={event.name}
-                                className="event-poster-image"
+                                className="event-poster-image event-img"
                             />
                             <h3 className="event-poster-title">{event.name}</h3>
                         </div>

@@ -1,13 +1,34 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/GalleryPage.css";
 import PropTypes from "prop-types";
-import image1 from "../images/tech01.jpg";
-import image2 from "../images/tech02.jpg";
-import image3 from "../images/tech013.jpg";
-import image4 from "../images/tech015.jpg";
+import image1 from "../images/tech020.jpg";
+import image2 from "../images/tech015.jpg";
+import image3 from "../images/Screenshot 2.jpg";
+import image4 from "../images/techp15.jpg";
+import ScrollReveal from "scrollreveal";
 
 function GalleryPage() {
+	useEffect(() => {
+		ScrollReveal({
+		  reset: true,
+		  distance: "10px",
+		  duration: 800,
+		  delay: 600,
+		});
+		ScrollReveal().reveal(".techody", {
+		  delay: 600,
+		  origin: "right",
+		});
+		ScrollReveal().reveal(".techp", {
+		  delay: 600,
+		  origin: "left",
+		});
+		ScrollReveal().reveal(".resume", {
+		  delay: 600,
+		  origin: "right",
+		});
+	  }, []);
   const imageData = [
     {
       id: 1,
@@ -36,38 +57,58 @@ function GalleryPage() {
   const [showFullGallery, setShowFullGallery] = useState(false);
 
   return (
-    <section className="gallery-page">
-      <h2 className="gallery-page-title">Image Gallery</h2>
-      <div className="gallery-grid">
-        {images.map((image) => (
-          <div key={image.id} className="gallery-thumbnail">
-            <img src={image.src} alt={image.alt} className="thumbnail-image" />
-          </div>
-        ))}
-      </div>
-      <div className="text-center">
-        <button
-          onClick={() => setShowFullGallery(true)}
-          className="view-all-button"
-        >
-          <Link to="/fullgallery" className="view-all-link">
-            View All
-          </Link>
-        </button>
-      </div>
-    </section>
+    <>
+	<div>
+	<p className="text-center text-4xl text-gray-200 font-bold mb-5"> Image Gallery</p>
+	</div>
+    <ul>
+		<li>
+			<a href="">
+				<figure className="techody">
+					<img src={image1} alt=''/>
+					<figcaption>Tech Odyssey</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<figure className="techp">
+					<img src={image2} alt=''/>
+					<figcaption>Techphoria</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<figure className="resume">
+					<img src={image3} alt=''/>
+					<figcaption>Resume workshop</figcaption>
+				</figure>
+			</a>
+		</li>
+		<li>
+			<a href="">
+				<figure className="techp">
+					<img src={image4} alt=''/>
+					<figcaption>Techphoria</figcaption>
+				</figure>
+			</a>
+		</li>
+
+	</ul>
+	<div className='text-center'>
+
+	<button className='view-all-button'> 
+                    <Link to="/fullgallery">
+
+                        Veiw All Captures
+                    </Link>
+                    </button>
+                </div>
+    </>
   );
 }
 
-GalleryPage.propTypes = {
-  imageData: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      src: PropTypes.string.isRequired,
-      alt: PropTypes.string.isRequired,
-      // title: PropTypes.string.isRequired, // Remove or add title property to image data
-    })
-  ).isRequired,
-};
+
 
 export default GalleryPage;

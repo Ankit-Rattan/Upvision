@@ -9,11 +9,48 @@ import DSW from "../images/DSW.jpg";
 import "../Styles/Message.css";
 import { text } from "@fortawesome/fontawesome-svg-core";
 import myGif from "../images/Robot1.gif";
+import ScrollReveal from "scrollreveal";
 function Message() {
+
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: "4rem",
+      duration: 1500,
+      delay: 500,
+    });
+    ScrollReveal().reveal(".director-msg", {
+      delay: 700,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".director-img", {
+      delay: 800,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".dsw-msg", {
+      delay: 800,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".dsw-img", {
+      delay: 800,
+      origin: "right",
+    });
+    ScrollReveal().reveal(".coor-msg", {
+      delay: 800,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".coor-img", {
+      delay: 500,
+      origin: "left",
+    });
+  }, []);
+
   const navigate = useNavigate();
   const messageClick = () => {
     navigate("/");
   };
+
+
 
   return (
     <div id="message">
@@ -35,11 +72,11 @@ function Message() {
             <img
               src={myGif}
               alt="my-gif"
-              className="robot_vid h-[100px] mx-[50%]"
+              className="robot_vid "
             />
           </div>
           <div className="ba-section ">
-            <div className="ba-image-content ">
+            <div className="ba-image-content director-img ">
               <div className="image">
                 <img src={director} alt="Director" className="ba-image1" />
                 <h2 className="p-5">
@@ -47,7 +84,7 @@ function Message() {
                 </h2>
               </div>
             </div>
-            <div className="ba-text-content" id="director-msg">
+            <div className="ba-text-content director-msg" id="director-msg">
               {/* <span>#NITDAlumni</span> */}
               <h1 className="ba-title">
                 <span>Director&apos;s Message</span>
@@ -99,7 +136,7 @@ function Message() {
         </ul>
         <div>
           <div className="ba-section " id="dsw_msg">
-            <div className="ba-text-content" id="director-msg">
+            <div className="ba-text-content dsw-msg" id="director-msg">
               {/* <span>#NITDAlumni</span> */}
               <h1 className="ba-title">
                 <span>Dean Student Welfare&apos;s Message</span>
@@ -119,7 +156,7 @@ function Message() {
               </p>
             </div>
             <div className="ba-image-content ">
-              <div className="image">
+              <div className="image dsw-img">
                 <img
                   src={DSW}
                   alt="Director"
@@ -148,16 +185,16 @@ function Message() {
             <li></li>
             <li></li>
           </ul>
-          <div className="ba-section manoj-section">
-            <div className="ba-image-content" id="manoj_msg">
-              <div className="image">
+          <div className="ba-section coor-section">
+            <div className="ba-image-content" id="coor_msg">
+              <div className="image coor-img">
                 <img src={coordinator} alt="Director" className="ba-image1" />
                 <h2 className="p-5">
                   <strong>Dr. Manoj Kumawat</strong>
                 </h2>
               </div>
             </div>
-            <div className="ba-text-content" id="manoj_msg">
+            <div className="ba-text-content coor-msg" id="coor_msg">
               {/* <span>#NITDAlumni</span> */}
               <h1 className="ba-title">
                 <span>Faculty Coordinator&apos;s Message</span>
