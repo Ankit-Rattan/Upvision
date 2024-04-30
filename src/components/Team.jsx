@@ -26,7 +26,7 @@ const Team = () => {
     });
     ScrollReveal().reveal(".team-dgs1", {
       delay: 600,
-      origin: "right",
+      origin: "left",
     });
     ScrollReveal().reveal(".team-dgs2", {
       delay: 600,
@@ -35,9 +35,9 @@ const Team = () => {
   }, []);
   return (
     <>
-      <div className="Robot_arm_gif">
-        <img src={myGif} alt="my-gif" className="robot_hand mx-[750%]" />
-      </div>
+      {/* <div className="Robot_arm_gif">
+        <img src={myGif} alt="my-gif" className="robot_hand" />
+      </div> */}
       <div className="black pb-5  p-[5rem] max-w-[100%] " id="team">
         <div className="">
           <p className=" team-title text-slate-200 text-center ">

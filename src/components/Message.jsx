@@ -7,7 +7,6 @@ import director from "../images/director-img.png";
 import coordinator from "../images/Manoj_Kumawat.jpg";
 import DSW from "../images/DSW.jpg";
 import "../Styles/Message.css";
-import { text } from "@fortawesome/fontawesome-svg-core";
 import myGif from "../images/Robot1.gif";
 import ScrollReveal from "scrollreveal";
 function Message() {
@@ -29,11 +28,11 @@ function Message() {
     });
     ScrollReveal().reveal(".dsw-msg", {
       delay: 400,
-      origin: "right",
+      origin: "left",
     });
     ScrollReveal().reveal(".dsw-img", {
       delay: 400,
-      origin: "right",
+      origin: "left",
     });
     ScrollReveal().reveal(".coor-msg", {
       delay: 400,
@@ -72,7 +71,7 @@ function Message() {
             <img
               src={myGif}
               alt="my-gif"
-              className="robot_vid "
+              className="robot_vid"
             />
           </div>
           <div className="ba-section ">
@@ -85,7 +84,6 @@ function Message() {
               </div>
             </div>
             <div className="ba-text-content director-msg" id="director-msg">
-              {/* <span>#NITDAlumni</span> */}
               <h1 className="ba-title">
                 <span>Director&apos;s Message</span>
               </h1>
@@ -160,7 +158,7 @@ function Message() {
                 <img
                   src={DSW}
                   alt="Director"
-                  className="ba-image1 h-[400px] w-[330px]"
+                  className="ba-image1 "
                 />
                 <h2 className="p-5">
                   <strong>Prof. (Dr.) Jyoteesh Malhotra</strong>

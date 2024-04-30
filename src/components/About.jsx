@@ -12,7 +12,7 @@ const About = () => {
     });
     ScrollReveal().reveal(".about-description", {
       delay: 1000,
-      origin: "right",
+      origin: "left",
     });
   }, []);
   return (

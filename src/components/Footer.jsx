@@ -63,7 +63,7 @@ href="mailto: techclub@nitdelhi.ac.in"
 className="hover:text-emerald-300 font-thin"
 >
 {" "}
-📧techclub@nitdelhi.ac.i
+📧techclub@nitdelhi.ac.in
 </a>
 </p>
 </div>
@@ -79,17 +79,17 @@ Quick Links:
 </a>
 </li>
 <li className="flex">
-<Link className="hover:text-emerald-500" href="/">
+<a className="hover:text-emerald-500" href="#about">
 - About
-</Link>
+</a>
 </li>
 <li className="flex">
-<Link className="hover:text-emerald-500" href="/allteam">
+<Link className="hover:text-emerald-500" to="/allteam">
 - Team
 </Link>
 </li>
 <li className="flex">
-<Link className="hover:text-emerald-500" href="/eventfull">
+<Link className="hover:text-emerald-500" to="/eventfull">
 - Events
 </Link>
 </li>
@@ -109,7 +109,7 @@ alt="NITDelhi Logo"
 />
 </a>
 </div>
-<div className="w-[20rem]">
+<div className="w-auto">
 <p className="text-center flex-wrap text-sm mt-5">
 National Institute of Technology Delhi, Plot No. FA7,Zone P1, GT
 Karnal Road, Delhi, 110036

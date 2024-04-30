@@ -24,7 +24,7 @@ function EventPage() {
         });
         ScrollReveal().reveal(".event-title", {
           delay: 700,
-          origin: "right",
+          origin: "left",
         });
         ScrollReveal().reveal(".pop-up", {
           delay: 700,
