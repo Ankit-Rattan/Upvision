@@ -120,11 +120,7 @@ function Message() {
             </div>
             <div className="ba-image-content ">
               <div className="image">
-                <img
-                  src={DSW}
-                  alt="Director"
-                  className="ba-image1 h-[400px] w-[330px]"
-                />
+                <img src={DSW} alt="Director" className="ba-image1" />
                 <h2 className="p-5">
                   <strong>Prof. (Dr.) Jyoteesh Malhotra</strong>
                 </h2>

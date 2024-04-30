@@ -30,14 +30,16 @@ function GalleryPage() {
       alt: "Image 4",
     },
   ];
-  
+
   const images = Array.isArray(imageData) ? imageData.slice(0, 4) : [];
 
   const [showFullGallery, setShowFullGallery] = useState(false);
 
   return (
     <section className="gallery-page">
-      <h2 className="gallery-page-title">Image Gallery</h2>
+      <h2 className="gallery-page-title">
+        <span>IMAGE GALLERY</span>
+      </h2>
       <div className="gallery-grid">
         {images.map((image) => (
           <div key={image.id} className="gallery-thumbnail">

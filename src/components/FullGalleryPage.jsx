@@ -1,4 +1,5 @@
 import React from "react";
+import Navbar1 from "./Navbar1";
 import { Link } from "react-router-dom";
 import "../Styles/GalleryPage.css";
 import image1 from "../images/tech01.jpg";
@@ -265,6 +266,7 @@ function FullGalleryPage() {
 
   return (
     <section className="gallery-page">
+      <Navbar1 />
       <h2 className="gallery-page-title">Full Image Gallery</h2>
       <div className="gallery-grid">
         {imageData.map((image) => (
