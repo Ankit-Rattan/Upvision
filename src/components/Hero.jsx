@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import "../Styles/Hero.css";
 import vid from "../images/Hero_vid.mp4";
 import myGif from "../images/Code01.gif";
-import NET from "vanta/src/vanta.net";
-
+// import NET from "vanta/src/vanta.net";
+import myGif2 from "../images/logo3d1.gif";
 function Hero() {
   const initialTitle1 = "We Don't Sleep, We Code (NIT Delhi)";
   const initialTitle2 = "Launch Your Tech Career at NIT Delhi";
@@ -13,20 +13,20 @@ function Hero() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isFirstTitle, setIsFirstTitle] = useState(true);
 
-  useEffect(() => {
-    NET({
-      el: "#hero",
-      mouseControls: true,
-      touchControls: true,
-      gyroControls: false,
-      minHeight: 200.0,
-      minWidth: 200.0,
-      scale: 1.0,
-      scaleMobile: 1.0,
-      color: "#16E6B4",
-      backgroundColor: 0x0,
-    });
-  }, []);
+  // useEffect(() => {
+  //   NET({
+  //     el: "#hero",
+  //     mouseControls: true,
+  //     touchControls: true,
+  //     gyroControls: false,
+  //     minHeight: 200.0,
+  //     minWidth: 200.0,
+  //     scale: 1.0,
+  //     scaleMobile: 1.0,
+  //     color: "#16E6B4",
+  //     backgroundColor: 0x0,
+  //   });
+  // }, []);
   useEffect(() => {
     let intervalId;
 
@@ -70,23 +70,30 @@ function Hero() {
   ]);
 
   return (
-    <>
+    <div className="hero_outer">
       <div id="hero" className="h-500px">
         <section className="hero">
           {/* <div className="Hero_vid">
             <video id="background-video" src={vid} autoPlay loop muted />
           </div> */}
-          <h1 className={isTyping ? "second-title" : "title"}>
+          {/* <h1 className={isTyping ? "second-title" : "title"}>
             <span className="upvision-text text-[#16E6B4]">UpVision:</span>{" "}
             {currentTitle}
-          </h1>
+          </h1> */}
 
           <div className="Code_gif">
             <img src={myGif} alt="my-gif" className="h-[200px]" />
           </div>
+          <div className="upvision_logo_gif">
+            <img
+              src={myGif2}
+              alt="my-gif"
+              className="robot_hand h-[450px] mx-[-100%]"
+            />
+          </div>
         </section>
       </div>
-    </>
+    </div>
   );
 }
 

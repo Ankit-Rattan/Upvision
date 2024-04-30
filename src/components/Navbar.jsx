@@ -8,6 +8,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
+import college from "../images/nitdelhi.jpeg"
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -26,9 +27,9 @@ function Navbar() {
         </h1>
         <ul className="navbar-items">
           <li>
-            <a href="#hero" className="navbar-links">
+            <Link to="/" className="navbar-links">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#about" className="navbar-links">
@@ -41,14 +42,14 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#events" className="navbar-links">
+            <Link to="/eventfull" className="navbar-links">
               Events
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#team" className="navbar-links">
+            <Link to="/allteam" className="navbar-links">
               Team
-            </a>
+            </Link>
           </li>
           <li>
             <a href="#alumni" className="navbar-links">
@@ -62,6 +63,11 @@ function Navbar() {
             </a>
           </li>
         </ul>
+        <h1 className="">
+          <a href="https://nitdelhi.ac.in/">
+            <img src={college} className=" rounded-full h-[5rem] w-[5rem]" />
+          </a>
+        </h1>
         <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
           <div onClick={openNav} className="mobile-navbar-close">
             <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
@@ -79,6 +85,11 @@ function Navbar() {
               </Link>
             </li>
             <li>
+              <a onClick={openNav} href="#message">
+                Message
+              </a>
+            </li>
+            <li>
               <a onClick={openNav} href="#events">
                 Events
               </a>
@@ -86,6 +97,11 @@ function Navbar() {
             <li>
               <a onClick={openNav} href="#team">
                 Team
+              </a>
+            </li>
+            <li>
+              <a onClick={openNav} href="#alumni">
+                Alumni
               </a>
             </li>
             <li>
