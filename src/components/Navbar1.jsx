@@ -9,7 +9,7 @@ import {
 import "../Styles/Navbar.css";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function Navbar1() {
   const [nav, setNav] = useState(false);
 
   const openNav = () => {
@@ -24,76 +24,7 @@ function Navbar() {
             <img src={logo} className="navbar-logo" />
           </Link>
         </h1>
-        {/* <ul className="navbar-items">
-          <li>
-            <Link to="/" className="navbar-links">
-              Home
-            </Link>
-          </li>
-          <li>
-            <a href="#about" className="navbar-links">
-              About Us
-            </a>
-          </li>
-          <li>
-            <a href="#message" className="navbar-links">
-              Message
-            </a>
-          </li>
-          <li>
-            <a href="#events" className="navbar-links">
-              Events
-            </a>
-          </li>
-          <li>
-            <Link to="/allteam" className="navbar-links">
-              Team
-            </Link>
-          </li>
-          <li>
-            <a href="#alumni" className="navbar-links">
-              <Link to="/alumni">Alumni</Link>
-            </a>
-          </li>
-
-          <li>
-            <a href="#footer" className="navbar-links">
-              Contact Us
-            </a>
-          </li>
-        </ul> */}
-        <div className={`mobile-navbar ${nav ? "open-nav" : ""}`}>
-          <div onClick={openNav} className="mobile-navbar-close">
-            <FontAwesomeIcon icon={faXmark} className="hamb-icon" />
-          </div>
-
-          <ul className="mobile-navbar-links">
-            <li>
-              <Link onClick={openNav} to="/">
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link onClick={openNav} to="/">
-                About Us
-              </Link>
-            </li>
-            <li>
-              <a onClick={openNav} href="#events">
-                Events
-              </a>
-            </li>
-            <li>
-              <a onClick={openNav} href="#team">
-                Team
-              </a>
-            </li>
-            <li>
-              <a onClick={openNav} href="#">
-                Contact Us
-              </a>
-            </li>
-          </ul>
+   
         </div>
         {/* Hamburger Icon */}
         <div className="mobile-nav">
@@ -104,7 +35,7 @@ function Navbar() {
           />
         </div>
       </div>
-    </div>
+    
   );
 }
-export default Navbar;
+export default Navbar1;

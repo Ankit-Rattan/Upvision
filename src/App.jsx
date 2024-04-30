@@ -11,6 +11,11 @@ import Alumuni from "./components/Alumuni";
 import FullGalleryPage from "./components/FullGalleryPage";
 import EventFull from "./components/EventFull";
 import Hero from "./components/Hero";
+import Navneet from "./components/Navneet";
+import Aryan from "./components/Aryan";
+import RahulSinha from "./components/RahulSinha";
+import SumanAbhishek from "./components/SumanAbhishek";
+import Adityasharma from "./components/Adityasharma";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -38,6 +43,11 @@ function App() {
                 <Route path="/alumni" element={<Alumuni />} />
                 <Route path="/fullgallery" element={<FullGalleryPage />} />
                 <Route path="/eventfull" element={<EventFull />} />
+                <Route path="/navneet" element={<Navneet/>} />
+                <Route path="/aryansrivastav" element={<Aryan/>} />
+                <Route path="/rahulsinha" element={<RahulSinha/>} />
+                <Route path="/aksuman" element={<SumanAbhishek/>} />
+                <Route path="/adityasharma" element={<Adityasharma/>} />
               </Routes>
               <Footer />
             </div>

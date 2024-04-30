@@ -256,10 +256,10 @@ body{
 
 }
 .Robot_gif{
-    position: relative;
+    width: 7rem;
+    position: absolute;
     /* height: 3rem; */
-    z-index: 1;
     box-shadow: inset 1px 30px 0px black, inset 10px 60px 100px black;
-    background-color: #16E6B4;
+    background-color: #27dab000;
 }
 

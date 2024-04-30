@@ -88,7 +88,7 @@ function Hero() {
             <img
               src={myGif2}
               alt="my-gif"
-              className="robot_hand h-[450px] mx-[-40%]"
+              className="robot_hand h-[450px] mx-[-100%]"
             />
           </div>
         </section>

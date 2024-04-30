@@ -12,12 +12,7 @@ import Navbar from "./components/Navbar";
 import Message from "./components/Message";
 import AnimatedCursor from "react-animated-cursor";
 import About from "./components/About";
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
-// import TeamCard from './components/GS'
-// import ImageTrack from "./components/Project";
-import Vanta from "./components/Vanta";
-// import ProjectCard from "./components/Project";
+
 
 function App() {
   return (

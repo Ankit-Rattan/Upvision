@@ -2,12 +2,12 @@ import React, { useState, useEffect } from "react";
 import "../Styles/EventPage.css";
 import "../Styles/GalleryPage.css";
 
-import techodyssey from "../images/techodyssey.jpg";
-import CODE_ON from "../images/CODE_ON.jpg";
-import resume from "../images/resume.jpg";
-import Techphoria from "../images/Techphoria.jpg";
-import AnimatedCursor from "react-animated-cursor";
-import Navbar1 from "./Navbar";
+import techodyssey from '../images/techodyssey.jpg';
+import CODE_ON from '../images/CODE_ON.jpg';
+import resume from '../images/resume.jpg';
+import Techphoria from '../images/Techphoria.jpg';
+import AnimatedCursor from 'react-animated-cursor';
+import Navbar1 from './Navbar1';
 
 function EventFull() {
   const [events, setEvents] = useState([]);
@@ -16,7 +16,6 @@ function EventFull() {
   const exampleEventsData = [
     {
       id: 1,
-
       name: "CODE ON",
       date: "April 3, 2024",
       time: "4:00 PM onwards",
@@ -27,7 +26,6 @@ function EventFull() {
     },
     {
       id: 2,
-
       name: "Resume",
       date: "January 2, 2024",
       time: "3:00 PM onwards",
@@ -66,23 +64,18 @@ function EventFull() {
   const EventPopup = ({ event }) => {
     return (
       <>
-        <AnimatedCursor />
-        <div className="event-popup" id="events">
-          <div className="event-popup-content">
-            <button
-              className="close-button"
-              onClick={() => toggleEventDetails(event.id)}
-            >
-              &times;
-            </button>
-            <h3 className="event-popup-title">{event.name}</h3>
-            <p className="event-popup-date-time">
-              {event.date} | {event.time}
-            </p>
-            <p className="event-popup-location">{event.location}</p>
-            <p className="event-popup-description">{event.description}</p>
-          </div>
+  <AnimatedCursor/>
+      <div className="event-popup" id='events'>
+        <div className="event-popup-content">
+          <button className="close-button" onClick={() => toggleEventDetails(event.id)}>
+            &times;
+          </button>
+          <h3 className="event-popup-title">{event.name}</h3>
+          <p className="event-popup-date-time">{event.date} | {event.time}</p>
+          <p className="event-popup-location">{event.location}</p>
+          <p className="event-popup-description">{event.description}</p>
         </div>
+      </div>
       </>
     );
   };
@@ -97,9 +90,7 @@ function EventFull() {
           {events.map((event) => (
             <div
               key={event.id}
-              className={`event-poster ${
-                activeEvent === event.id ? "active" : ""
-              }`}
+              className={`event-poster ${activeEvent === event.id ? "active" : ""}`}
               onClick={() => toggleEventDetails(event.id)}
             >
               <img
@@ -112,9 +103,7 @@ function EventFull() {
           ))}
         </div>
         {activeEvent && (
-          <EventPopup
-            event={events.find((event) => event.id === activeEvent)}
-          />
+          <EventPopup event={events.find((event) => event.id === activeEvent)} />
         )}
       </section>
     </>
