@@ -23,7 +23,17 @@ const Alumni = () => {
                 <div className="">
                   <div className="">
                     <div className="card flex justify-evenly flex-wrap  gap-[.5rem]">
-                    
+
+                       <div>
+                        <AlumCard
+                          name="Vaishnv Raju"
+                          desig="General Secretary (2023-2024)"
+                          img="https://media.licdn.com/dms/image/D4D03AQGbWZbg7-DjVg/profile-displayphoto-shrink_400_400/0/1669055975082?e=1719446400&v=beta&t=HlIhpcl-TBBIo7tXws4FKCnWcH926EZQWebibW3wov4"
+                          linkedin="https://www.linkedin.com/in/navneetsingh123/"
+                          email="mailto:navneetsingh@example.com"
+                          link = "/navneet"
+                        />
+                      </div>
                       <div>
                         <AlumCard
                           name="Navneet Singh"
@@ -47,7 +57,7 @@ const Alumni = () => {
                       <div>
                         <AlumCard
                           name="Aditya Sharma"
-                          desig="General Secretary (202-2021)"
+                          desig="General Secretary (2020-2021)"
                           img="https://media.licdn.com/dms/image/D4D03AQErmwCsCtX7Sw/profile-displayphoto-shrink_400_400/0/1695185770687?e=1719446400&v=beta&t=8WgKpN9xjikqjFLgDcC6xxapYemJUBEtDXjez9Ullio"
                           linkedin="https://www.linkedin.com/in/aditya-sharma-6b18ba158/"
                           email="mailto:rituparn678@gmail.com"
@@ -78,16 +88,7 @@ const Alumni = () => {
                           link="/aksuman"
                         />
                       </div>
-                      <div>
-                        <AlumCard
-                          name="Rahul Sinha"
-                          desig="Deputy General Secretary (2020-2021)"
-                          img="https://media.licdn.com/dms/image/D4D03AQFM5Hf0qzvOMw/profile-displayphoto-shrink_400_400/0/1694754193166?e=1719446400&v=beta&t=kLVZmuIisoArINBdPdgmA5EUpMwl0rkKIHAbIY3A1Q4"
-                          linkedin="https://www.linkedin.com/in/rahulsinha19/"
-                          email="mailto:rahul_18@alumni.nitdelhi.ac.in"
-                          link="/rahulsinha"
-                        />
-                      </div>
+                     
                     </div>
                   </div>
                 </div>
