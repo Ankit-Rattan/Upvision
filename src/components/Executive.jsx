@@ -1,5 +1,5 @@
 import React from 'react'
-import TeamCard from './TeamCard'
+import TeamCard from './TeamCard' 
 import bhuvi from '../images/Bhuvi.jpg'
 import priya from '../images/Priya.jpg'
 import vedanshi from '../images/Vedanshi.png'
