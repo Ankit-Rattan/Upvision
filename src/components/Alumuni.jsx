@@ -31,7 +31,7 @@ const Alumni = () => {
                           img={GS}
                           linkedin="https://www.linkedin.com/in/vaishnv-raju-v20015r/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                           email="mailto:vaishnv.raju@gmail.com"
-                          link = "/navneet"
+                          link = "/VaishnvRaju"
                         />
                       </div>
                       <div>
