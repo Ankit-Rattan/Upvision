@@ -28,9 +28,9 @@ const Alumni = () => {
                         <AlumCard
                           name="Vaishnv Raju"
                           desig="General Secretary (2023-2024)"
-                          img="https://media.licdn.com/dms/image/D4D03AQGbWZbg7-DjVg/profile-displayphoto-shrink_400_400/0/1669055975082?e=1719446400&v=beta&t=HlIhpcl-TBBIo7tXws4FKCnWcH926EZQWebibW3wov4"
-                          linkedin="https://www.linkedin.com/in/navneetsingh123/"
-                          email="mailto:navneetsingh@example.com"
+                          img={GS}
+                          linkedin="https://www.linkedin.com/in/vaishnv-raju-v20015r/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                          email="mailto:vaishnv.raju@gmail.com"
                           link = "/navneet"
                         />
                       </div>
