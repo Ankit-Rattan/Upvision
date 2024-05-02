@@ -6,6 +6,8 @@ import vedanshi from '../images/Vedanshi.png'
 import vanshika from '../images/Vanshika.png'
 import himanshu from '../images/himanshu.jpg'
 import arshpreet from '../images/arshpreet.jpg'
+import Tarang from '../images/Tarang.jpg'
+
 
 
 
@@ -27,7 +29,7 @@ const Executive = () => {
                     <TeamCard name="Anshu Kumar" desig="Executive" img="https://media.licdn.com/dms/image/D4E03AQH2bys1E07IaQ/profile-displayphoto-shrink_400_400/0/1672495503162?e=1718841600&v=beta&t=Axeaq_alIuObZv8pij2EUsgSO3RtyPkhmekH_b_RrF4" linkedin="https://www.linkedin.com/in/foranshu/" email="mailto:221230011@nitdelhi.ac.in" />
                     <TeamCard name="Sandeep Kumar Prajapati " desig="Executive" img="https://media.licdn.com/dms/image/D4D03AQGyFWcmFEmlrg/profile-displayphoto-shrink_400_400/0/1688658001383?e=1718841600&v=beta&t=fChVgEOH4pn5r1mwbkZ7OtqhsbzJjEWOkio1nmwC_zA" linkedin="https://www.linkedin.com/in/sandeep-kumar-prajapati-600b11259/" email="mailto:sandeepkumar1082003@gmail.com" />
                     <TeamCard name="Utkarsh Trivedi" desig="Executive" img="https://media.licdn.com/dms/image/D5603AQFExAYrImvvVw/profile-displayphoto-shrink_400_400/0/1695144808865?e=1718841600&v=beta&t=JDapVt-PDXpfRp0qYxTlmfHdJAfvmtJT4Kr7TxkvCP0" linkedin="https://www.linkedin.com/in/trivedi-utkarsh/" email="mailto:221210114@nitdelhi.ac.in" />
-                    <TeamCard name="Tarang Srivastava" desig="Executive" img={} linkedin="https://www.linkedin.com/in/tarang-srivastava-72468b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" email="mailto:221210109@nitdelhi.ac.in" />
+                    <TeamCard name="Tarang Srivastava" desig="Executive" img={Tarang} linkedin="https://www.linkedin.com/in/tarang-srivastava-72468b253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" email="mailto:221210109@nitdelhi.ac.in" />
 
 
             </div>
