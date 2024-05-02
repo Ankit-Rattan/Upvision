@@ -1,0 +1,11 @@
+
+.Hero_vid{
+    width: 100%;
+    position: absolute;
+
+}
+.temp{
+    color: #16E6B4;
+    z-index: 2;
+    position: absolute;
+}

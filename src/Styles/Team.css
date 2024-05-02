@@ -1,15 +1,17 @@
-.team-title{
+.team-title {
     font-family: 'Rubik', sans-serif;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: .7px;
     margin-bottom: 70px;
-
-}
-.team-title > span {
+    text-align: center;
+  }
+  
+  .team-title > span {
     position: relative;
-}
-.team-title span::before {
+  }
+  
+  .team-title span::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -18,21 +20,16 @@
     border-radius: 8px;
     left: 0;
     bottom: -12px;
-}
-@media screen and (max-width: 870px){
-    
-    .team{
-        max-width: 100%;
-        margin-left:17%;
-        
+  }
+  
+  @media screen and (max-width: 870px) {
+    .team-gs,
+    .team-dgs1,
+    .team-dgs2 {
+      width: 100%;
+      max-width: 300px; /* Adjust based on your design */
+      margin-left: auto;
+      margin-right: auto;
     }
-    .allteam{
-        margin-right: 20%;
-    }
-}
-.Robot_arm_gif{
-    position: absolute;
-
-    box-shadow: inset 1px 30px 0px black, inset 10px 60px 100px black;
-    background-color: #000000;
-}
+  }
+  

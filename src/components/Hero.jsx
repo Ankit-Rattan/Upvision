@@ -71,7 +71,7 @@ function Hero() {
 
   return (
     <div className="hero_outer">
-      <div id="hero" className="h-500px">
+      <div id="hero" className="m-auto mx-[20%]" >
         <section className="hero">
           {/* <div className="Hero_vid">
             <video id="background-video" src={vid} autoPlay loop muted />
@@ -81,14 +81,14 @@ function Hero() {
             {currentTitle}
           </h1> */}
 
-          <div className="Code_gif">
+          {/* <div className="Code_gif">
             <img src={myGif} alt="my-gif" className="h-[200px]" />
-          </div>
-          <div className="upvision_logo_gif">
+          </div> */}
+          <div className="upvision_logo_gif mx-[15rem]">
             <img
               src={myGif2}
               alt="my-gif"
-              className="robot_hand h-[450px] mx-[-100%]"
+              className="robot_hand "
             />
           </div>
         </section>

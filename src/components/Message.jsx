@@ -9,6 +9,7 @@ import DSW from "../images/DSW.jpg";
 import "../Styles/Message.css";
 import myGif from "../images/Robot1.gif";
 import ScrollReveal from "scrollreveal";
+
 function Message() {
   useEffect(() => {
     ScrollReveal({
@@ -31,7 +32,7 @@ function Message() {
     });
     ScrollReveal().reveal(".dsw-img", {
       delay: 400,
-      origin: "left",
+      origin: "right",
     });
     ScrollReveal().reveal(".coor-msg", {
       delay: 400,
@@ -49,7 +50,7 @@ function Message() {
   };
 
   return (
-    <div id="message">
+    <div id="message ">
       <div className="area">
         <ul className="circles">
           <li></li>
@@ -73,20 +74,20 @@ function Message() {
           </div>
           <div className="ba-section ">
             <div className="ba-image-content director-img ">
-              <div className="image">
+              <div className="image mt-[5rem]">
                 <img src={director} alt="Director" className="ba-image1" />
-                <h2 className="p-5">
+                <h2 className="p-5 text-[1.2rem]">
                   <strong>Prof.(Dr.) Ajay K. Sharma</strong>
                 </h2>
               </div>
             </div>
             <div className="ba-text-content director-msg" id="director-msg">
-              <h1 className="ba-title">
-                <span>Director&apos;s Message</span>
+              <h1 className="ba-title ">
+                <span className="">Director&apos;s Message</span>
               </h1>
-              <p className="ba-description">
+              <p className="ba-description text-[1.15rem]">
                 <br />
-                Our club stands as a beacon of innovation, collaboration, and
+                Our club stands as a beacon of innovation, collaboration, and 
                 learning in the ever-evolving landscape of technology. At
                 Upvision, we believe in harnessing the power of technology to
                 inspire, educate, and empower individuals to shape a better
@@ -136,7 +137,7 @@ function Message() {
               <h1 className="ba-title">
                 <span>Dean Student Welfare&apos;s Message</span>
               </h1>
-              <p className="ba-description">
+              <p className="ba-description text-[1.15rem]">
                 <br />
                 As the Dean of Student Welfare, I'm thrilled to witness the
                 boundless creativity and passion for technology within our
@@ -155,9 +156,9 @@ function Message() {
                 <img
                   src={DSW}
                   alt="Director"
-                  className="ba-image1 "
+                  className="ba-image1"
                 />
-                <h2 className="p-5">
+                <h2 className="p-5 text-[1.2rem]">
                   <strong>Prof. (Dr.) Jyoteesh Malhotra</strong>
                 </h2>
               </div>
@@ -184,17 +185,17 @@ function Message() {
             <div className="ba-image-content" id="coor_msg">
               <div className="image coor-img">
                 <img src={coordinator} alt="Director" className="ba-image1" />
-                <h2 className="p-5">
+                <h2 className="p-5  text-[1.2rem]">
                   <strong>Dr. Manoj Kumawat</strong>
                 </h2>
               </div>
             </div>
             <div className="ba-text-content coor-msg" id="coor_msg">
               {/* <span>#NITDAlumni</span> */}
-              <h1 className="ba-title">
+              <h1 className="ba-title text-2xl">
                 <span>Faculty Coordinator&apos;s Message</span>
               </h1>
-              <p className="ba-description">
+              <p className="ba-description text-[1.15rem]">
                 <br />
                 It is my privilege to foster an environment where curiosity
                 thrives, knowledge is shared, and connections are made.
@@ -223,6 +224,52 @@ function Message() {
           </div>
         </div>
       </div>
+      <div className="area">
+        <ul className="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div>
+          <div className="ba-section " id="dsw_msg">
+            <div className="ba-text-content dsw-msg" id="director-msg">
+              {/* <span>#NITDAlumni</span> */}
+              <h1 className="ba-title">
+                <span>Co-Coordinator&apos;s Message</span>
+              </h1>
+              <p className="ba-description text-[1.15rem]">
+                <br />
+                As co-coordinators, we're thrilled to be your guides into the exciting world of technology. Whether you're a seasoned coder or just starting to explore the digital landscape, this club is your place to learn, create, and connect with fellow tech enthusiasts.
+
+                This website will be your central hub for all things tech club. Here, you'll find information about upcoming events, workshops, guest speakers, and exciting projects you can get involved with. We'll also be sharing resources, tutorials, and thought-provoking articles to fuel your passion for technology.
+
+                We encourage you to actively participate in our club activities. Don't be afraid to ask questions, share your ideas, and collaborate with your peers. We're here to foster a supportive and inclusive environment where everyone feels empowered to explore their tech potential.
+              </p>
+            </div>
+            <div className="ba-image-content ">
+              <div className="image dsw-img">
+                <img
+                  src="https://media.licdn.com/dms/image/C5103AQEQ5p6AwfeePA/profile-displayphoto-shrink_800_800/0/1578723312696?e=1720051200&v=beta&t=fnVi2YFOQ6LrblBt_e6lHBOuESBb4kKw_-rB5vZtUqs"
+                  alt="Director"
+                  className="ba-image1 "
+                />
+                <h2 className="p-5 text-2xl">
+                  <strong>Dr. Gautam Kumar</strong>
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   );
 }

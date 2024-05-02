@@ -7,9 +7,9 @@
 
 .event-page-title {
     text-align: center;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     font-family: 'Poppins', sans-serif;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: bold;
     color: #fff; 
 }
@@ -17,6 +17,7 @@
 .event-page-title > span {
     position: relative;
 }
+
 .event-page-title span::before {
     content: '';
     position: absolute;
@@ -29,23 +30,19 @@
 }
 
 .event-grid {
-    display: flex;
-    grid-template-columns: repeat(2, 1fr);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
 }
 
 .event-poster {
     position: relative;
-    display: flex;
-    flex-direction: column;
     padding: 20px;
     background-color: #333333;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, filter 0.2s;
-    width: 70%;
-    max-width: 400px; 
-    margin: auto; 
+    width: 100%;
     cursor: pointer;
 }
 
@@ -71,7 +68,7 @@
     color: #fff;
     padding: 10px;
     margin: 0;
-    font-size: 26px;
+    font-size: 1.5rem;
     font-family: 'Poppins', sans-serif;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -124,7 +121,6 @@
     font-size: 16px;
     margin-bottom: 5px;
     color: aliceblue;
-
 }
 
 .event-popup-description {
@@ -133,3 +129,53 @@
     color: whitesmoke;
 }
 
+.text-center {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.view-all-button {
+    background-color: #16E6B4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.view-all-button:hover {
+    background-color: #13ad8a;
+}
+
+@media screen and (max-width: 768px) {
+    .event-page-title {
+        font-size: 2rem;
+        margin-bottom: 30px;
+    }
+    .event-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .event-page-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .event-poster-title {
+        font-size: 1rem;
+    }
+
+    .view-all-button {
+        font-size: 14px;
+    }
+    .event-grid{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

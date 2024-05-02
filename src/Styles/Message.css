@@ -1,17 +1,18 @@
 
 body{
-    background-color: black;
+    background-color: white;
+    width:100%;
+    height: 100%;
 }
-
 
 .ba-section {
     color: aliceblue;
     /* height: auto; */
-    padding: 32px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 24px;
+    gap: 15px;
     box-shadow: inset 0 60px 100px black; 
     background-color: black;
 }
@@ -25,10 +26,14 @@ body{
 .ba-image1 {
     width:auto;
     height: 300px;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }
 .ba-image2 {
     width:auto;
     height: 350px;
+    border-radius: 1rem;
+    margin-top: 2rem;
 }
 /* Text */
 .ba-text-content {
@@ -40,9 +45,10 @@ body{
 }
 .ba-title {
     /* animation: glow 1s ease-in-out infinite alternate; */
-    font-size: 40px;
-    font-weight: bold;
+    font-size:40px;
+    font-weight: bold;  
     letter-spacing: .7px;
+    
 }
 .ba-title > span {
     position: relative;
@@ -65,7 +71,16 @@ body{
     font-size: var(--font-size);
     letter-spacing: .8px;
     line-height: 1.8rem;
+    max-height: 300px; /* Set max height to enable scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer/Edge */
 }
+
+.ba-description::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
 
 #coor_msg,#director-msg{
     margin: 100px 50px;

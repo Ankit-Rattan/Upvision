@@ -1,0 +1,10 @@
+@media screen and (max-width: 768px) {
+    .w-fit {
+      width: 90%; /* Adjust width based on your design */
+    }
+    .image {
+      height: auto;
+      width: 100%;
+    }
+  }
+  

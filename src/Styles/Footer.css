@@ -1,9 +1,22 @@
- .footer-bg {
-    background-image: url('../images/footer-bg2.png');
-    background-size:cover;
-    background-position: top;
-    background-repeat: no-repeat;
+.footer-bg {
+  background-image: url("../images/footer-bg2.png");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-bg {
+    padding: 1rem;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
+  }
+  .w-full {
+    width: 100%;
+  }
+  .w-fit {
+    width: fit-content;
   }
 
-
-
+}

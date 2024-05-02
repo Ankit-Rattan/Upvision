@@ -35,19 +35,16 @@ const Team = () => {
   }, []);
   return (
     <>
-      {/* <div className="Robot_arm_gif">
-        <img src={myGif} alt="my-gif" className="robot_hand" />
-      </div> */}
-      <div className="black pb-5  p-[5rem] max-w-[100%] " id="team">
+      <div className="black pb-5 p-[5rem] max-w-[100%]" id="team">
         <div className="">
-          <p className=" team-title text-slate-200 text-center ">
+          <p className="team-title text-slate-200 text-center">
             <span>OUR TEAM</span>
           </p>
           <div className="team">
             <div className="">
               <div className="">
-                <div className="flex justify-between flex-wrap">
-                  <div className="team-gs">
+                <div className="flex justify-center flex-wrap">
+                  <div className="team-gs mb-8">
                     <DGS
                       name="Vaishnv Raju"
                       desig="General Secretary"
@@ -56,7 +53,7 @@ const Team = () => {
                       email="mailto:techclub@nitdelhi.ac.in"
                     />
                   </div>
-                  <div className="team-dgs1">
+                  <div className="team-dgs1 mb-8">
                     <DGS
                       name="Sudhanshu Shrivastava"
                       desig="Deputy Secretary General"
@@ -65,7 +62,7 @@ const Team = () => {
                       email="mailto:sudhanshushrivastava004@gmail.com"
                     />
                   </div>
-                  <div className="team-dgs2">
+                  <div className="team-dgs2 mb-8">
                     <DGS
                       name="Sajal Sahu"
                       desig="Deputy Secretary General"

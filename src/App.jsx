@@ -16,6 +16,7 @@ import Aryan from "./components/Aryan";
 import RahulSinha from "./components/RahulSinha";
 import SumanAbhishek from "./components/SumanAbhishek";
 import Adityasharma from "./components/Adityasharma";
+import Open from "./components/Open";
 
 function App() {
   const [loading, setLoading] = useState(false);
@@ -48,6 +49,7 @@ function App() {
                 <Route path="/rahulsinha" element={<RahulSinha/>} />
                 <Route path="/aksuman" element={<SumanAbhishek/>} />
                 <Route path="/adityasharma" element={<Adityasharma/>} />
+                <Route path="/open" element={<Open/>} />
               </Routes>
               <Footer />
             </div>

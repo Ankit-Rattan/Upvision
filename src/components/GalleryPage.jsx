@@ -58,6 +58,7 @@ function GalleryPage() {
 
   return (
     <>
+    
       <div>
         <p className="text-center text-4xl text-gray-200 font-bold mb-5">
           {" "}
@@ -66,36 +67,36 @@ function GalleryPage() {
       </div>
       <ul>
         <li>
-          <a href="">
+          <Link to="/fullgallery">
             <figure className="techody">
               <img src={image1} alt="" />
               <figcaption>Tech Odyssey</figcaption>
             </figure>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="">
+          <Link to="/fullgallery">
             <figure className="techp">
               <img src={image2} alt="" />
               <figcaption>Techphoria</figcaption>
             </figure>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="">
+          <Link to="/fullgallery">
             <figure className="resume">
               <img src={image3} alt="" />
               <figcaption>Resume workshop</figcaption>
             </figure>
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="">
+          <Link to="/fullgallery">
             <figure className="techp">
               <img src={image4} alt="" />
               <figcaption>Techphoria</figcaption>
             </figure>
-          </a>
+          </Link>
         </li>
       </ul>
       <div className="text-center">

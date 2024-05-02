@@ -66,7 +66,7 @@ function EventPage() {
             date: 'November 23, 2023',
             time: '4 PM Onwards',
             location: 'NIT Delhi Auditorium',
-            description: " ",
+            description: "UPVISION, the technical club of NIT Delhi in collaboration with Google Developer Student Club   (GDSC), organized the technical extravaganza Tech Odyssey 2023. The event unfolded with enthusiasm and innovation, featuring three captivating events: the Interbranch Technical Quiz, Interbranch Technical Pictionary, and Interbranch Cryptographic Treasure Hunt. The event brought together tech enthusiasts from various branches, creating an electrifying atmosphere. The aim of TechOdyssey 2023 was to foster a spirit of healthy competition and collaboration in the college. There were a total of 4 teams for each event– CSE, ECE, EEE and ME+CIVIL.",
             image: techodyssey
         },
         {
@@ -128,7 +128,7 @@ function EventPage() {
         <h2 className="event-page-title">
           <span>EVENTS</span>
         </h2>
-        <div className="event-main event-grid flex justify-evenly">
+        <div className="event-main event-grid flex  justify-evenly">
           {events.map((event) => (
             <div
               key={event.id}
