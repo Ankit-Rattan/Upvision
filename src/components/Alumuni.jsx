@@ -15,7 +15,7 @@ const Alumni = () => {
       <Navbar />
       
       <div className=" pb-5 px-[1rem] max-w-[100%]">
-        <p className="text-slate-200 text-center text-3xl font-semibold mb-3">Our Alumni is here!</p>
+        <p className="text-slate-200 text-center text-3xl font-semibold mb-3">Our Alumni</p>
         <div className="">
           <div className=" pb-5 px-[1rem] max-w-[100%]">
             <div className="">
