@@ -1,7 +1,10 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import DGS from "./DGS";
-import GS from "../images/GS.jpg";
+
+import DGS1 from "../images/Priya.jpg";  //line added for dgs
+import DGS2 from "../images/Ankit.jpeg";  //line added for dgs
+import DGS3 from "../images/arshpreet.jpg";  //line added for dgs
 import "../Styles/Footer.css";
 import Navbar from "./Navbar.jsx";
 import ScrollReveal from "scrollreveal";
@@ -46,29 +49,29 @@ const Team = () => {
                 <div className="flex justify-center flex-wrap">
                   <div className="team-gs mb-8">
                     <DGS
-                      name="Vaishnv Raju"
-                      desig="General Secretary"
-                      img={GS}
+                      name="Priya Panday"
+                      desig="Deputy Secretary General"
+                      img={DGS1}
                       linkedin="#"
                       email="mailto:techclub@nitdelhi.ac.in"
                     />
                   </div>
                   <div className="team-dgs1 mb-8">
                     <DGS
-                      name="Sudhanshu Shrivastava"
+                      name="Ankit Rattan"
                       desig="Deputy Secretary General"
-                      img="https://media.licdn.com/dms/image/D4D03AQHMoy3N2oynsw/profile-displayphoto-shrink_400_400/0/1699277096118?e=1718841600&v=beta&t=oDm4RCTlYin07oYKUP9zo1WVxuFxIODLGHovQQOQDmI"
-                      linkedin="https://www.linkedin.com/in/sudhanshu-shrivastava-88853b246/"
-                      email="mailto:sudhanshushrivastava004@gmail.com"
+                      img={DGS2}
+                      linkedin="https://www.linkedin.com/in/ankit-rattan-3a34b724a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BP2f4wTTeRgKI2feQXvZb0g%3D%3D"
+                      email="mailto:rattan0209@gmail.com"
                     />
                   </div>
                   <div className="team-dgs2 mb-8">
                     <DGS
-                      name="Sajal Sahu"
+                      name="Arshpreet Kaur"
                       desig="Deputy Secretary General"
-                      img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXkuNt1iZEOYd_mFuikHhiWW1tlrpZvhWkpANzH9NAw&s"
-                      linkedin="https://www.linkedin.com/in/sajalsahu8/"
-                      email="mailto:211210056@nitdelhi.ac.in"
+                      img={DGS3}
+                      linkedin="https://www.linkedin.com/in/arshpreet-kaur-4b3a621b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXQ5%2FLwb0Tf6QmrKnDnnxIA%3D%3D"
+                      email="arshpreetkaur429@gmail.com"
                     />
                   </div>
                 </div>
