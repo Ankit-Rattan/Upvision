@@ -12,7 +12,6 @@ import image20 from "../images/tech020.jpg";
 import image25 from "../images/techp4.png";
 import image26 from "../images/techp5.png";
 import image28 from "../images/techp7.jpg";
-import image29 from "../images/techp8.jpg";
 import image33 from "../images/techp12.jpg";
 import image34 from "../images/techp13.jpg";
 import image35 from "../images/techp14.jpg";
@@ -114,11 +113,11 @@ function FullGalleryPage() {
       src: image28,
       alt: "Image 28",
     },
-    {
-      id: 29,
-      src: image29,
-      alt: "Image 29",
-    },
+    // {
+    //   id: 29,
+    //   src: image29,
+    //   alt: "Image 29",
+    // },
     
     {
       id: 33,
