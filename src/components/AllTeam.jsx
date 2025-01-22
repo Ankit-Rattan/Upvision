@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
-import GS from "../images/GS.jpg";
+import DGS1 from "../images/Priya.jpg";
+import DGS2 from "../images/Ankit.jpeg";
+import DGS3 from "../images/arshpreet.jpg";
 import TeamCard from "./TeamCard";
 import DGS from "./DGS";
 import Executive from "./Executive";
@@ -41,39 +43,39 @@ const AllTeam = () => {
     <>
       <Navbar />
       <AnimatedCursor/>
-      <div className=" pb-5 p-[3rem]  max-w-[100%]">
+      <div className=" pb-5 p-[3rem] bg-black max-w-[100%]">
         <div>
           <p className=" team-title text-slate-200  text-center text-4xl mb-[3rem] font-semiboldch">Our Team</p>
           <div className="items-center shadow-md my-5">
             <div className="team">
-              {/* DGS, GS */}
+              {/* DGS */}
               <div className="">
                 <div className="first flex justify-around flex-wrap ">
                   <div>
                     <DGS
-                      name="Vaishnv Raju"
-                      desig="General Secretary"
-                      img={GS}
-                      linkedin="https://www.linkedin.com/in/vaishnv-raju-9j/"
-                      email="mailto:techclub@nitdelhi.ac.in"
+                      name="Priya Pandey"
+                      desig="Deputy Secretary General"
+                      img={DGS1}
+                      linkedin="https://www.linkedin.com/in/priya-pandey-786b36259"
+                      email="mailto:pandeymona336@gmail.com"
                     />
                   </div>
                   <div>
                     <DGS
-                      name="Sudhanshu Shrivastava"
+                      name="Ankit Rattan"
                       desig="Deputy Secretary General"
-                      img="https://media.licdn.com/dms/image/D4D03AQHMoy3N2oynsw/profile-displayphoto-shrink_400_400/0/1699277096118?e=1718841600&v=beta&t=oDm4RCTlYin07oYKUP9zo1WVxuFxIODLGHovQQOQDmI"
-                      linkedin="https://www.linkedin.com/in/sudhanshu-shrivastava-88853b246/"
-                      email="mailto:sudhanshushrivastava004@gmail.com"
+                      img={DGS2}
+                      linkedin="https://www.linkedin.com/in/ankit-rattan-3a34b724a?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BP2f4wTTeRgKI2feQXvZb0g%3D%3D"
+                      email="mailto:rattan0209@gmail.com"
                     />
                   </div>
                   <div>
                     <DGS
-                      name="Sajal Sahu"
+                      name="Arshpreet Kaur"
                       desig="Deputy Secretary General"
-                      img="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCXkuNt1iZEOYd_mFuikHhiWW1tlrpZvhWkpANzH9NAw&s"
-                      linkedin="https://www.linkedin.com/in/sajalsahu8/"
-                      email="mailto:211210056@nitdelhi.ac.in"
+                      img={DGS3}
+                      linkedin="https://www.linkedin.com/in/arshpreet-kaur-4b3a621b3?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXQ5%2FLwb0Tf6QmrKnDnnxIA%3D%3D"
+                      email="mailto:arshpreetkaur429@gmail.com"
                     />
                   </div>
                 </div>
@@ -86,7 +88,7 @@ const AllTeam = () => {
                 <hr className=" my-[1rem] w-full" />
                 {/* Volunteer */}
                 <div className="third">
-                <Volunteers />
+                {/* <Volunteers /> */}
                 </div>
               </div>
             </div>

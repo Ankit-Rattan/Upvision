@@ -5,6 +5,7 @@ import { useState, useRef, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import director from "../images/director-img.png";
 import coordinator from "../images/Manoj_Kumawat.jpg";
+import gautam from "../images/gautam.jpeg";
 import DSW from "../images/DSW.jpg";
 import "../Styles/Message.css";
 import myGif from "../images/Robot1.gif";
@@ -255,9 +256,8 @@ function Message() {
             </div>
             <div className="ba-image-content ">
               <div className="image dsw-img">
-                <img
-                  src="https://media.licdn.com/dms/image/C5103AQEQ5p6AwfeePA/profile-displayphoto-shrink_800_800/0/1578723312696?e=1720051200&v=beta&t=fnVi2YFOQ6LrblBt_e6lHBOuESBb4kKw_-rB5vZtUqs"
-                  alt="Director"
+                <img src = {gautam}
+                  alt="Dr Gautam"
                   className="ba-image1 "
                 />
                 <h2 className="p-5 text-2xl">

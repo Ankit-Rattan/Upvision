@@ -2,98 +2,116 @@ import React, { useState, useEffect } from "react";
 import "../Styles/EventPage.css";
 import techodyssey from "../images/techodyssey.jpg";
 import CODE_ON from "../images/CODE_ON.jpg";
+import fetch from "../images/fetch.jpg";
 import resume from "../images/resume.jpg";
 import Techphoria from "../images/Techphoria.jpg";
 import AnimatedCursor from "react-animated-cursor";
 import { Link } from "react-router-dom";
 import ScrollReveal from "scrollreveal";
 
-
 function EventPage() {
-    
-    useEffect(() => {
-        ScrollReveal({
-          reset: true,
-          distance: "10px",
-          duration: 500,
-          delay: 600,
-        });
-        ScrollReveal().reveal(".event-main", {
-          delay: 600,
-          origin: "left",
-        });
-        ScrollReveal().reveal(".event-title", {
-          delay: 700,
-          origin: "left",
-        });
-        ScrollReveal().reveal(".pop-up", {
-          delay: 700,
-          origin: "bottom",
-        });
-      }, []);
+  useEffect(() => {
+    ScrollReveal({
+      reset: true,
+      distance: "10px",
+      duration: 500,
+      delay: 600,
+    });
+    ScrollReveal().reveal(".event-main", {
+      delay: 600,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".event-title", {
+      delay: 700,
+      origin: "left",
+    });
+    ScrollReveal().reveal(".pop-up", {
+      delay: 700,
+      origin: "bottom",
+    });
+  }, []);
 
-    const [events, setEvents] = useState([]);
-    const [activeEvent, setActiveEvent] = useState(null);
-    const [popupVisible, setPopupVisible] = useState(false); // New state to control popup visibility
- 
-    const EventsData = [
+  const [events, setEvents] = useState([]);
+  const [activeEvent, setActiveEvent] = useState(null);
+  const [popupVisible, setPopupVisible] = useState(false); // New state to control popup visibility
 
+  const EventsData = [
     {
       id: 1,
+      name: "FETCHATHON 2.0",
+      date: "October 15, 2024",
+      time: "10:00 AM onwards",
+      location: "NIT Delhi Auditorium",
+      description:
+        "All Day NIT Delhi Campus The Technical Club of NIT Delhi hosted Fetch-A-Thon 2.0, a dynamic hackathon aimed at fostering innovation, collaboration, and technical expertise. Participants tackled real-world challenges across domains such as AI, blockchain, and sustainability. Guided by industry mentors, teams crafted innovative solutions, enhanced their skills, and gained insights into professional practices. The event concluded with an awards ceremony recognizing creativity and excellence, inspiring participants to pursue cutting-edge technological advancements. Fetch-A-Thon 2.0 was a resounding success, setting the stage for future endeavors in tech-driven innovation.",
+      image: fetch,
+    },
+    {
+      id: 2,
 
-            name: "CODE ON",
-            date: "April 3, 2024",
-            time: "4:00 PM onwards",
-            location: "NIT Delhi Auditorium",
-            description:
-            "The CodeON Festive Edition at NIT Delhi showcased a vibrant celebration of coding talent, with overwhelming participation from first and second-year B.Tech students. Held amidst intense competition, participants tackled meticulously crafted challenges, showcasing their ingenuity and dedication. *Jesna Vinod and Shivam Patidar claimed top honors in the first-year category, while Jugnu Gupta and Shreyansh Gupta emerged victorious in the second-year category*, each bestowed with merit certificates and generous cash prizes. Their success reflects the collective spirit of all participants. The event concluded with gratitude towards contributors, eagerly anticipating future exploration and learning opportunities.",
-            image: CODE_ON,
-        },
-        {
-            id: 2,
+      name: "CODE ON",
+      date: "April 3, 2024",
+      time: "4:00 PM onwards",
+      location: "NIT Delhi Auditorium",
+      description:
+        "The CodeON Festive Edition at NIT Delhi showcased a vibrant celebration of coding talent, with overwhelming participation from first and second-year B.Tech students. Held amidst intense competition, participants tackled meticulously crafted challenges, showcasing their ingenuity and dedication. *Jesna Vinod and Shivam Patidar claimed top honors in the first-year category, while Jugnu Gupta and Shreyansh Gupta emerged victorious in the second-year category*, each bestowed with merit certificates and generous cash prizes. Their success reflects the collective spirit of all participants. The event concluded with gratitude towards contributors, eagerly anticipating future exploration and learning opportunities.",
+      image: CODE_ON,
+    },
+    {
+      id: 3,
 
-            name: "Resume",
-            date: "April 10, 2024",
-            time: "3:00 PM - 6:00 PM",
-            location: "NIT Delhi Campus",
-            description:
-            "UPVISION at NIT Delhi hosted an online session on -Crafting Careers: Mastering the Art of Resume Building, led by distinguished alumna Ms. Arushi Jain. Ms. Jain, a Software Development Engineer at Atlassian, shared practical insights and strategies for creating impactful resumes. The session aimed to empower students to tailor their resumes to stand out in the competitive job market. Through interactive discussions, attendees gained valuable tips for constructing compelling resumes, setting them on the path to professional success. Ms. Jain's guidance inspired attendees to approach their career paths with renewed confidence and purpose.",
-            image: resume,
-        },
-        {
-            id: 3,
-            name: 'Tech Odyssey 2023',
-            date: 'November 23, 2023',
-            time: '4 PM Onwards',
-            location: 'NIT Delhi Auditorium',
-            description: "UPVISION, the technical club of NIT Delhi in collaboration with Google Developer Student Club   (GDSC), organized the technical extravaganza Tech Odyssey 2023. The event unfolded with enthusiasm and innovation, featuring three captivating events: the Interbranch Technical Quiz, Interbranch Technical Pictionary, and Interbranch Cryptographic Treasure Hunt. The event brought together tech enthusiasts from various branches, creating an electrifying atmosphere. The aim of TechOdyssey 2023 was to foster a spirit of healthy competition and collaboration in the college. There were a total of 4 teams for each event– CSE, ECE, EEE and ME+CIVIL.",
-            image: techodyssey
-        },
-        {
-            id: 4,
-            name: 'Techphoria',
-            date: 'October 17-18, 2023',
-            time: '4PM onwards',
-            location: 'NIT Delhi Auditorium',
-            description: "TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highly anticipated event on the 1st day with a series of informative and engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors. The day commenced with a presentation by officials from the Bureau of Indian Standards. They enlightened the audience, primarily comprising students, about the crucial role BIS plays in setting and maintaining quality standards for various products.",
-            image: Techphoria
-        }
-    ];
+      name: "Resume",
+      date: "April 10, 2024",
+      time: "3:00 PM - 6:00 PM",
+      location: "NIT Delhi Campus",
+      description:
+        "UPVISION at NIT Delhi hosted an online session on -Crafting Careers: Mastering the Art of Resume Building, led by distinguished alumna Ms. Arushi Jain. Ms. Jain, a Software Development Engineer at Atlassian, shared practical insights and strategies for creating impactful resumes. The session aimed to empower students to tailor their resumes to stand out in the competitive job market. Through interactive discussions, attendees gained valuable tips for constructing compelling resumes, setting them on the path to professional success. Ms. Jain's guidance inspired attendees to approach their career paths with renewed confidence and purpose.",
+      image: resume,
+    },
+    {
+      id: 4,
+      name: "Tech Odyssey 2023",
+      date: "November 23, 2023",
+      time: "4 PM Onwards",
+      location: "NIT Delhi Auditorium",
+      description:
+        "UPVISION, the technical club of NIT Delhi in collaboration with Google Developer Student Club   (GDSC), organized the technical extravaganza Tech Odyssey 2023. The event unfolded with enthusiasm and innovation, featuring three captivating events: the Interbranch Technical Quiz, Interbranch Technical Pictionary, and Interbranch Cryptographic Treasure Hunt. The event brought together tech enthusiasts from various branches, creating an electrifying atmosphere. The aim of TechOdyssey 2023 was to foster a spirit of healthy competition and collaboration in the college. There were a total of 4 teams for each event– CSE, ECE, EEE and ME+CIVIL.",
+      image: techodyssey,
+    },
+    // {
+    //   id: 4,
+    //   name: "Techphoria",
+    //   date: "October 17-18, 2023",
+    //   time: "4PM onwards",
+    //   location: "NIT Delhi Auditorium",
+    //   description:
+    //     "TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highly anticipated event on the 1st day with a series of informative and engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors. The day commenced with a presentation by officials from the Bureau of Indian Standards. They enlightened the audience, primarily comprising students, about the crucial role BIS plays in setting and maintaining quality standards for various products.",
+    //   image: Techphoria,
+    // },
+    {
+      id: 5,
+      name: "Techphoria",
+      date: "October 17-18, 2023",
+      time: "4PM onwards",
+      location: "NIT Delhi Auditorium",
+      description:
+        "TechPhoria, in collaboration with the Bureau of Indian Standards (BIS), kicked off it’s highly anticipated event on the 1st day with a series of informative and engaging activities. The event aimed to educate and inspire students about the importance of adhering to BIS standards in the technology and manufacturing sectors. The day commenced with a presentation by officials from the Bureau of Indian Standards. They enlightened the audience, primarily comprising students, about the crucial role BIS plays in setting and maintaining quality standards for various products.",
+      image: Techphoria,
+    },
+  ];
 
-    useEffect(() => {
-        setEvents(EventsData);
-    }, []);
+  useEffect(() => {
+    setEvents(EventsData);
+  }, []);
 
-    const toggleEventDetails = (eventId) => {
-        setActiveEvent(activeEvent === eventId ? null : eventId);
+  const toggleEventDetails = (eventId) => {
+    setActiveEvent(activeEvent === eventId ? null : eventId);
 
-        setTimeout(() => {
-            setActiveEvent(activeEvent === eventId ? null : eventId);
-            setPopupVisible(!popupVisible);
-        }, 500);
-    };
-
-
+    setTimeout(() => {
+      setActiveEvent(activeEvent === eventId ? null : eventId);
+      setPopupVisible(!popupVisible);
+    }, 500);
+  };
 
   const EventPopup = ({ event }) => {
     return (
@@ -128,7 +146,7 @@ function EventPage() {
         <h2 className="event-page-title">
           <span>EVENTS</span>
         </h2>
-        <div className="event-main event-grid flex  justify-evenly">
+        <div className="flex justify-evenly">
           {events.map((event) => (
             <div
               key={event.id}

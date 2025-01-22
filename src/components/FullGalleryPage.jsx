@@ -13,7 +13,6 @@ import image25 from "../images/techp4.png";
 import image26 from "../images/techp5.png";
 import image28 from "../images/techp7.jpg";
 import image29 from "../images/techp8.jpg";
-
 import image33 from "../images/techp12.jpg";
 import image34 from "../images/techp13.jpg";
 import image35 from "../images/techp14.jpg";
