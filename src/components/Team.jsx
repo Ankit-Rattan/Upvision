@@ -49,10 +49,10 @@ const Team = () => {
                 <div className="flex justify-center flex-wrap">
                   <div className="team-gs mb-8">
                     <DGS
-                      name="Priya Panday"
+                      name="Priya Pandey"
                       desig="Deputy Secretary General"
                       img={DGS1}
-                      linkedin="#"
+                      linkedin="https://www.linkedin.com/in/priya-pandey-786b36259/"
                       email="mailto:techclub@nitdelhi.ac.in"
                     />
                   </div>

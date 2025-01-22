@@ -51,7 +51,7 @@ function FullGalleryPage() {
 
         <hr className="m-[1rem]" />
 
-        <div className="techph bg-black">
+        {/* <div className="techph bg-black">
           <h1 className="text-center text-3xl font-mono m-[1rem]">-Techphoria-</h1>
           <div className="gallery-grid">
             {techph.map((image) => (
@@ -60,7 +60,7 @@ function FullGalleryPage() {
               </div>
             ))}
           </div>
-        </div>
+        </div> */}
 
         <hr className="m-[1rem]" />
 
